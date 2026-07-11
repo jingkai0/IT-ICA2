@@ -1,0 +1,29 @@
+<!-- Author: Dylan, admin no: 261424B-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Sneaker website</title>
+    </head>
+    <body>
+        <nav>
+        <a href="homepage.html">Homepage</a> | 
+        <a href="productcatalogue.html">Product Catalogue</a> | 
+        <a href="feedbackform.html">Feedback form</a> | 
+        <a href="contactus.html">contact us</a> | 
+        <a href="aboutus.html">about us</a> | 
+    </nav>
+        <h1>Feedback Form</h1>
+        <form action="submit_feedback.php" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="feedback">Feedback:</label><br>
+            <textarea id="feedback" name="feedback" rows="4" cols="50" required></textarea><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </body>
