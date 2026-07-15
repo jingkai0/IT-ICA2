@@ -6,7 +6,7 @@ h1 {
 nav {
     display: flex;
     justify-content: space-evenly;
-    padding: 15px 0;
+    padding: 20px 0;
 }
 
 nav a {
@@ -18,3 +18,11 @@ h1{
     font-family: Helvetica, ;
 }
 p{text-align: center;}
+
+h2 {
+    font-size: 24px;
+    text-align: center;
+    margin: 20px 0;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
