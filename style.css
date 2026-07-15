@@ -27,7 +27,65 @@ h2 {
     text-decoration: underline;
     text-underline-offset: 8px;
 }
-.site-logo{
-    width: 100px;
-    height: auto;
+
+
+/* Customer Favourites */
+
+.featured{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    margin:40px 0;
+}
+
+.card{
+    width:250px;
+    background:white;
+    border:1px solid #ddd;
+    border-radius:10px;
+    padding:20px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card img{
+    width:100%;
+    border-radius:8px;
+}
+
+/* Customer Review*/
+
+.reviews{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+    margin:40px 0;
+}
+
+.review-card{
+    width:280px;
+    background:white;
+    border:1px solid #ddd;
+    border-radius:10px;
+    padding:20px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.review-card:hover{
+    transform:translateY(-5px);
+}
+.box {
+    background-color: grey;
+    width: 600px;      /* Width of the box */
+    height: 400px;     /* Height of the box */
+    margin: 50px auto; /* Centers the box */
+    padding: 20px;     /* Space inside the box */
+    border-radius: 10px;
 }
