@@ -28,6 +28,12 @@ h2 {
     text-underline-offset: 8px;
 }
 
+.site-logo {
+    height: 110px;
+    width: auto;
+    margin-right: 10px;
+}
+
 
 /* Customer Favourites */
 
