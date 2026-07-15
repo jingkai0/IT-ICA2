@@ -5,8 +5,9 @@ h1 {
 
 nav {
     display: flex;
-    justify-content: space-evenly;
-    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
 }
 
 nav a {
@@ -20,7 +21,7 @@ h1{
 p{text-align: center;}
 
 h2 {
-    font-size: 24px;
+    font-size: 20px;
     text-align: center;
     margin: 20px 0;
     text-decoration: underline;
