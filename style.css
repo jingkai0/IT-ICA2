@@ -88,8 +88,8 @@ h2 {
     transform:translateY(-5px);
 }
 .box {
-    background-color: grey;
-    width: 600px;      /* Width of the box */
+    background-color: lightgrey;
+    width: 1800px;      /* Width of the box */
     height: 400px;     /* Height of the box */
     margin: 50px auto; /* Centers the box */
     padding: 20px;     /* Space inside the box */
