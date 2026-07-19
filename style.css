@@ -221,7 +221,37 @@ h2 {
     width: auto;
     margin-right: 10px;
 }
+.response-banner {
+    background-color: #E6F0FF;
+    width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
 
+.response-banner h3 {
+    margin-bottom: 10px;
+}
+.socials {
+    text-align: center;
+}
+
+.socials img {
+    width: 50px;
+    margin: 15px;
+}
+
+.store-image {
+    width: 900px;
+    margin: 30px auto;
+}
+
+.store-image img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
 
 /* aboputus page */
 
