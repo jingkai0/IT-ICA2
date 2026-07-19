@@ -27,7 +27,10 @@ h2 {
     text-decoration: underline;
     text-underline-offset: 8px;
 }
-
+.opening-hours {
+    text-align: center;
+    font-size: 20px;
+}
 .site-logo {
     height: 110px;
     width: auto;
@@ -53,6 +56,32 @@ h2 {
     padding:20px;
     box-shadow:0 2px 8px rgba(0,0,0,0.15);
     transition:0.3s;
+}
+.card1{
+    width:250px;
+    background:lightblue;
+    border:1px solid #ddd;
+    border-radius:10px;
+    padding:20px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+.card1 img{
+    width:100%;
+    border-radius:8px;
+}
+.card2{
+    width:250px;
+    background:lightcoral;
+    border:1px solid #ddd;
+    border-radius:10px;
+    padding:20px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+.card2 img{
+    width:100%;
+    border-radius:8px;
 }
 
 .card:hover{
@@ -88,14 +117,48 @@ h2 {
     transform:translateY(-5px);
 }
 .box {
-    background-color: grey;
-    width: 600px;      /* Width of the box */
-    height: 400px;     /* Height of the box */
-    margin: 50px auto; /* Centers the box */
-    padding: 20px;     /* Space inside the box */
+    position: relative;
+    width: 1400px;
+    height: 400px;
+    margin: 50px auto;
     border-radius: 10px;
+    overflow: hidden;   /* Hides anything outside the box */
 }
 
+<<<<<<< HEAD
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Makes image fill the box */
+    display: block;
+}
+
+.box h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: white;
+    font-size: 60px;
+    margin: 0;
+    text-align: center;
+
+    text-shadow: 2px 2px 8px black;
+}
+.map {
+    width: 1400px;
+    margin: 30px auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.map iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+}
+=======
 /* resources page */
 .card2 {
     background-color: #f9f9f9;
@@ -142,3 +205,4 @@ img {
     margin: 10px 0;
     font-size: 18px;
 }
+>>>>>>> de5e2999a21d9f57f34b88727e44a89fbeba0e0c
