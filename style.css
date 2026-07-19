@@ -105,3 +105,34 @@ h2 {
     margin: 20px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
+
+
+
+
+
+
+
+
+/*Homepage "shop now" button*/
+.button-container {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    margin-top: 30px;        /* Optional spacing */
+}
+
+/*Homepage"why shop with us" section*/
+.benefits {
+    width: fit-content;
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px 40px;
+    background-color: #e0e0e0;
+
+    list-style: none;
+    text-align: left;
+}
+
+.benefits li {
+    margin: 10px 0;
+    font-size: 18px;
+}
