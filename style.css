@@ -1,45 +1,4 @@
-<<<<<<< HEAD
-h1 {
-    text-align: center
-    ;
-    margin: 20px 0;
-}
-
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 40px;
-}
-
-nav a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-h1{
-    font-family: Helvetica, ;
-}
-p{text-align: center;}
-
-h2 {
-    font-size: 20px;
-    text-align: center;
-    margin: 20px 0;
-    text-decoration: underline;
-    text-underline-offset: 8px;
-}
-
-.site-logo {
-    height: 110px;
-    width: auto;
-    margin-right: 10px;
-}
-
-
-=======
 /* Homepage css stuff */
->>>>>>> da47ce2153186edefd4e111584a0b980baf2e923
 /* Customer Favourites */
 
 .featured{
@@ -126,11 +85,10 @@ h2 {
     justify-content: center; 
     margin-top: 30px;        
 }
-<<<<<<< HEAD
 /* Product Catalogue */
 .shoe{
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     margin: 20px auto;
 }
 .product-table{
@@ -142,7 +100,7 @@ h2 {
   padding: 10px;
   border: 1px solid #ddd;
 }
-=======
+
 
 /*Homepage"why shop with us" section*/
 .benefits {
@@ -302,4 +260,3 @@ nav a {
     color: black;
     font-weight: bold;
 }
->>>>>>> da47ce2153186edefd4e111584a0b980baf2e923
