@@ -302,7 +302,57 @@
 
 
 /* contactus page */
+<<<<<<< HEAD
 .contact-box {
+=======
+
+/* Contact Us cards */
+.featured{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.contact-card{
+    text-decoration: none;
+    color: inherit;
+}
+
+.contact-card .card1,
+.contact-card .card2{
+    width: 250px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.contact-card .card1{
+    background: lightblue;
+}
+
+.contact-card .card2{
+    background: lightcoral;
+}
+
+.contact-card img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    display: block;
+    margin: 15px auto;
+}
+
+.contact-card:hover .card1,
+.contact-card:hover .card2{
+    transform: translateY(-5px);
+}
+.box {
+>>>>>>> 9c61310c6229cc09ede46223b35310834a9f474c
     position: relative;
     width: 1400px;
     height: 400px;
