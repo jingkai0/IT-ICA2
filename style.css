@@ -172,11 +172,35 @@ h2{
 }
 
 
-/*Homepage "shop now" button*/
+/* Homepage "Shop Now" button */
 .button-container {
     display: flex;
-    justify-content: center; 
-    margin-top: 30px;        
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #ffb703;  
+    color: #0b2d5c;              
+    padding: 15px 35px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    border: 3px solid white;
+    transition: 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.button:hover {
+    background-color: #ffd166;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.button:active {
+    transform: scale(0.98);
 }
 
 
@@ -212,6 +236,33 @@ h2{
 .benefits li {
     margin: 10px 0;
     font-size: 18px;
+}
+
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero-box {
+    background-color: #0b2d5c;   /* Dark blue */
+    color: white;
+    max-width: 700px;
+    margin: auto;
+    padding: 40px;
+    border-radius: 15px;
+    border: 3px solid #1f4e8c;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.hero h1 {
+    margin-bottom: 15px;
+    font-size: 2.5rem;
+}
+
+.hero p {
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+    line-height: 1.5;
 }
 
 
