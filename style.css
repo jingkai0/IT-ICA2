@@ -1,232 +1,18 @@
-/* Homepage css stuff */
-
-/* Customer Favourites */
-
-.featured{
-    display:flex;
-    justify-content:center;
-    gap:30px;
-    flex-wrap:wrap;
-    margin:40px 0;
-}
-
-.card{
-    width:250px;
-    background:white;
-    border:1px solid #ddd;
-    border-radius:10px;
-    padding:20px;
-    box-shadow:0 2px 8px rgba(0,0,0,0.15);
-    transition:0.3s;
-}
-.card1{
-    width:250px;
-    background:lightblue;
-    border:1px solid #ddd;
-    border-radius:10px;
-    padding:20px;
-    box-shadow:0 2px 8px rgba(0,0,0,0.15);
-    transition:0.3s;
-}
-.card1 img{
-    width:100%;
-    border-radius:8px;
-}
-.card2{
-    width:250px;
-    background:lightcoral;
-    border:1px solid #ddd;
-    border-radius:10px;
-    padding:20px;
-    box-shadow:0 2px 8px rgba(0,0,0,0.15);
-    transition:0.3s;
-}
-.card2 img{
-    width:100%;
-    border-radius:8px;
-}
-
-.card:hover{
-    transform:translateY(-5px);
-}
-
-.card img{
-    width:100%;
-    border-radius:8px;
-}
-.card-link{
-    text-decoration: none;
-    color: inherit;
-}
-
-.card-link:hover .card{
-    transform: translateY(-5px);
-    transition: 0.3s;
-    cursor: pointer;
-}
-
-/* Customer Review*/
-
-.reviews{
-    display:flex;
-    justify-content:center;
-    gap:25px;
-    flex-wrap:wrap;
-    margin:40px 0;
-}
-
-.review-card{
-    width:280px;
-    background:white;
-    border:1px solid #ddd;
-    border-radius:10px;
-    padding:20px;
-    box-shadow:0 2px 8px rgba(0,0,0,0.15);
-    transition:0.3s;
-}
-
-.review-card:hover{
-    transform:translateY(-5px);
-}
-
-/* Product Review Pages */
-
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background:#f5f5f5;
-    margin:0;
-    text-align:center;
-}
-
-nav{
-    background:#222;
-    padding:18px;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    font-weight:bold;
-    font-size:18px;
-}
-
-nav a:hover{
-    color:#ff9800;
-}
-
-h1{
-    margin-top:40px;
-    font-size:40px;
-}
-
-.product-image{
-    width:300px;
-    border-radius:12px;
-    box-shadow:0 4px 10px rgba(0,0,0,0.2);
-    margin:20px 0;
-}
-
-.description{
-    max-width:700px;
-    margin:0 auto 40px;
-    font-size:18px;
-    line-height:1.6;
-}
-
-h2{
-    margin-bottom:30px;
-}
-
-.review-container{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:25px;
-    margin-bottom:50px;
-}
-
-.review-card{
-    width:280px;
-    background:white;
-    border-radius:12px;
-    padding:20px;
-    box-shadow:0 4px 10px rgba(0,0,0,0.15);
-    transition:0.3s;
-}
-
-.review-card:hover{
-    transform:translateY(-8px);
-}
-
-.review-card h3{
-    margin-top:0;
-    font-size:24px;
-}
-
-.review-card p{
-    line-height:1.5;
-}
-
-.review-card strong{
-    color:#555;
-}
+/* ==========================================
+   HOMEPAGE CSS
+========================================== */
 
 
-/* Homepage "Shop Now" button */
-.button-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 35px;
-}
+/* ==========================================
+   HERO SECTION
+========================================== */
 
-.button {
-    display: inline-block;
-    background-color: #ffb703;  
-    color: #0b2d5c;              
-    padding: 15px 35px;
-    font-size: 18px;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 30px;
-    border: 3px solid white;
-    transition: 0.3s ease;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-}
-
-.button:hover {
-    background-color: #ffd166;
-    transform: translateY(-3px) scale(1.05);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-}
-
-.button:active {
-    transform: scale(0.98);
-}
-
-
-/*Homepage"why shop with us" section*/
-.benefits {
-    width: fit-content;
-    max-width: 500px;
-    margin: 30px auto;
-    padding: 20px 40px;
-    background-color: #e0e0e0;
-
-    list-style: none;
-    text-align: left;
-}
-
-.benefits li {
-    margin: 10px 0;
-    font-size: 18px;
-}
-
-.hero {
+.homepage .hero {
     text-align: center;
     padding: 60px 20px;
 }
 
-.hero-box {
+.homepage .hero-box {
     background-color: #0b2d5c;
     color: white;
     max-width: 700px;
@@ -237,16 +23,219 @@ h2{
     box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
-.hero h1 {
+.homepage .hero h1 {
     margin-bottom: 15px;
     font-size: 2.5rem;
 }
 
-.hero p {
+.homepage .hero p {
     margin-bottom: 25px;
     font-size: 1.1rem;
     line-height: 1.5;
 }
+
+
+/* ==========================================
+   SHOP NOW BUTTON
+========================================== */
+
+.homepage .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.homepage .button {
+    display: inline-block;
+    background-color: #ffb703;
+    color: #0b2d5c;
+    padding: 15px 35px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    border: 3px solid white;
+    transition: 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.homepage .button:hover {
+    background-color: #ffd166;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.homepage .button:active {
+    transform: scale(0.98);
+}
+
+
+/* ==========================================
+   CUSTOMER FAVOURITES
+========================================== */
+
+.homepage .featured {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.homepage .card,
+.homepage .card1,
+.homepage .card2 {
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.homepage .card {
+    background: white;
+}
+
+.homepage .card1 {
+    background: lightblue;
+}
+
+.homepage .card2 {
+    background: lightcoral;
+}
+
+.homepage .card img,
+.homepage .card1 img,
+.homepage .card2 img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.homepage .card:hover,
+.homepage .card1:hover,
+.homepage .card2:hover {
+    transform: translateY(-5px);
+}
+
+.homepage .card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.homepage .card-link:hover .card,
+.homepage .card-link:hover .card1,
+.homepage .card-link:hover .card2 {
+    cursor: pointer;
+}
+
+
+/* ==========================================
+   CUSTOMER REVIEWS
+========================================== */
+
+.homepage .reviews {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.homepage .review-card {
+    width: 280px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.homepage .review-card:hover {
+    transform: translateY(-5px);
+}
+
+
+/* ==========================================
+   WHY SHOP WITH US
+========================================== */
+
+.homepage .benefits-container {
+    display: flex;
+    justify-content: center;
+}
+
+.homepage .benefits {
+    width: fit-content;
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px 40px;
+    background-color: #e0e0e0;
+    list-style: none;
+    text-align: left;
+    border-radius: 10px;
+}
+
+.homepage .benefits li {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+
+/* ==========================================
+   PRODUCT REVIEW PAGES
+========================================== */
+
+.product-image {
+    display: block;
+    width: 300px;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.description {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.review-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+.review-card {
+    width: 280px;
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.review-card:hover {
+    transform: translateY(-8px);
+}
+
+.review-card h3 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.review-card p {
+    line-height: 1.5;
+}
+
+.review-card strong {
+    color: #555;
+}
+
 
 /* Product catalaogue page */
 .shoe{
