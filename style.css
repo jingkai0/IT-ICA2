@@ -3,9 +3,7 @@
 ========================================== */
 
 
-/* ==========================================
-   HERO SECTION
-========================================== */
+/* HERO SECTION */
 
 .homepage .hero {
     text-align: center;
@@ -35,9 +33,7 @@
 }
 
 
-/* ==========================================
-   SHOP NOW BUTTON
-========================================== */
+/* HOMEPAGE, SHOP NOW BUTTON */
 
 .homepage .button-container {
     display: flex;
@@ -70,9 +66,7 @@
 }
 
 
-/* ==========================================
-   CUSTOMER FAVOURITES
-========================================== */
+/* CUSTORMER'S FAVOURITES */
 
 .homepage .featured {
     display: flex;
@@ -130,9 +124,7 @@
 }
 
 
-/* ==========================================
-   CUSTOMER REVIEWS
-========================================== */
+/* CUSTORMER'S FAVOURITE REVIEWS */
 
 .homepage .reviews {
     display: flex;
@@ -157,9 +149,7 @@
 }
 
 
-/* ==========================================
-   WHY SHOP WITH US
-========================================== */
+/* HOMEPAGE, WHY SHOP WITH US */
 
 .homepage .benefits-container {
     display: flex;
@@ -183,9 +173,7 @@
 }
 
 
-/* ==========================================
-   PRODUCT REVIEW PAGES
-========================================== */
+/* HOMEPAGE REVIEWS */
 
 .product-image {
     display: block;
