@@ -3,7 +3,7 @@
 ========================================== */
 
 
-/* HERO SECTION */
+/* HOMEPAGE, HERO SECTION */
 
 .homepage .hero {
     text-align: center;
@@ -66,7 +66,7 @@
 }
 
 
-/* CUSTORMER'S FAVOURITES */
+/* HOMEPAGE, CUSTORMER'S FAVOURITES */
 
 .homepage .featured {
     display: flex;
@@ -113,7 +113,7 @@
 }
 
 
-/* CUSTORMER'S FAVOURITE REVIEWS */
+/* HOMEPAGE, CUSTORMER'S FAVOURITE REVIEWS */
 
 .homepage .reviews {
     display: flex;
