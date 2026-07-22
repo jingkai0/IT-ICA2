@@ -66,7 +66,7 @@
 }
 
 
-/* CUSTORMER'S FAVOURITES */
+/* HOMEPAGE, CUSTOMER'S FAVOURITES */
 
 .homepage .featured {
     display: flex;
@@ -114,7 +114,7 @@
 }
 
 
-/* CUSTORMER'S FAVOURITE REVIEWS */
+/* HOMEPAGE, CUSTORMER'S FAVOURITE REVIEWS */
 
 .homepage .reviews {
     display: flex;
