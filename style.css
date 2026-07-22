@@ -3,7 +3,9 @@
 ========================================== */
 
 
-/* HERO SECTION */
+/* ==========================================
+   HERO SECTION
+========================================== */
 
 .homepage .hero {
     text-align: center;
@@ -33,7 +35,9 @@
 }
 
 
-/* HOMEPAGE, SHOP NOW BUTTON */
+/* ==========================================
+   SHOP NOW BUTTON
+========================================== */
 
 .homepage .button-container {
     display: flex;
@@ -66,7 +70,9 @@
 }
 
 
-/* CUSTORMER'S FAVOURITES */
+/* ==========================================
+   CUSTOMER FAVOURITES
+========================================== */
 
 .homepage .featured {
     display: flex;
@@ -124,7 +130,9 @@
 }
 
 
-/* CUSTORMER'S FAVOURITE REVIEWS */
+/* ==========================================
+   CUSTOMER REVIEWS
+========================================== */
 
 .homepage .reviews {
     display: flex;
@@ -149,7 +157,9 @@
 }
 
 
-/* HOMEPAGE, WHY SHOP WITH US */
+/* ==========================================
+   WHY SHOP WITH US
+========================================== */
 
 .homepage .benefits-container {
     display: flex;
@@ -173,7 +183,9 @@
 }
 
 
-/* HOMEPAGE REVIEWS */
+/* ==========================================
+   PRODUCT REVIEW PAGES
+========================================== */
 
 .product-image {
     display: block;
@@ -282,10 +294,6 @@
 .resources-card {
     background-color: #f9f9f9;
     border: 1px solid #ddd;
-    justify-content: center;
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 600px;
 }
 
 .resources-img {
@@ -455,27 +463,13 @@ h2 {
 
 
 /* aboutus page */
-.about-us h1 {
-  background: linear-gradient(135deg, #1a1a2e 0%, #000080 100%);
-  color: #fff;
-  padding: 60px 20px;
-  letter-spacing: 6px;
-  position: relative;
-}
 
-.about-us h1::after {
-  content: '';
-  display: block;
-  width: 80px;
-  height: 3px;
-  background: #FFFDD0;
-  margin: 20px auto 0;
-}
 .about-us {
   max-width: 1400px;
   margin: 20px auto;
   padding: 50px 40px;
   background-color: #fff;
+  border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
@@ -512,3 +506,25 @@ nav {
   z-index: 100;
 }
 
+h1 {
+  background: linear-gradient(135deg, #1a1a2e 0%, #000080 100%);
+  color: #fff;
+  padding: 60px 20px;
+  letter-spacing: 6px;
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+}
+ h1::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: #FFFDD0;
+  margin: 20px auto 0;
+ }
+
+ .rounded-box, .banner, .hero-section {
+  border-radius: 16px;
+  overflow: hidden;
+}
