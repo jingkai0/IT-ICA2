@@ -88,6 +88,7 @@
 }
 
 
+
 .homepage .card img,
 .homepage .card1 img,
 .homepage .card2 img {
@@ -465,6 +466,7 @@ h2 {
   margin: 20px auto;
   padding: 50px 40px;
   background-color: #fff;
+  border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
