@@ -3,7 +3,7 @@
 ========================================== */
 
 
-/* HOMEPAGE, HERO SECTION */
+/* HERO SECTION */
 
 .homepage .hero {
     text-align: center;
@@ -66,7 +66,7 @@
 }
 
 
-/* HOMEPAGE, CUSTORMER'S FAVOURITES */
+/* CUSTORMER'S FAVOURITES */
 
 .homepage .featured {
     display: flex;
@@ -113,7 +113,7 @@
 }
 
 
-/* HOMEPAGE, CUSTORMER'S FAVOURITE REVIEWS */
+/* CUSTORMER'S FAVOURITE REVIEWS */
 
 .homepage .reviews {
     display: flex;
@@ -141,7 +141,8 @@
 /* HOMEPAGE, WHY SHOP WITH US */
 
 .homepage .benefits-container {
-    justify-content: center;    
+    display: flex;
+    justify-content: center;
 }
 
 .homepage .benefits {
@@ -161,7 +162,7 @@
 }
 
 
-/* HOMEPAGE RECENT REVIEWS */
+/* HOMEPAGE REVIEWS */
 
 .product-image {
     display: block;
