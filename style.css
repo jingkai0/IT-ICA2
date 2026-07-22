@@ -87,17 +87,6 @@
     transition: 0.3s;
 }
 
-.homepage .card {
-    background: white;
-}
-
-.homepage .card1 {
-    background: lightblue;
-}
-
-.homepage .card2 {
-    background: lightcoral;
-}
 
 .homepage .card img,
 .homepage .card1 img,
@@ -152,8 +141,7 @@
 /* HOMEPAGE, WHY SHOP WITH US */
 
 .homepage .benefits-container {
-    display: flex;
-    justify-content: center;
+    justify-content: center;    
 }
 
 .homepage .benefits {
@@ -173,7 +161,7 @@
 }
 
 
-/* HOMEPAGE REVIEWS */
+/* HOMEPAGE RECENT REVIEWS */
 
 .product-image {
     display: block;
