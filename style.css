@@ -1,93 +1,243 @@
-/* Homepage css stuff */
-/* Customer Favourites */
+/* ==========================================
+   HOMEPAGE CSS
+========================================== */
 
-.featured{
-    display:flex;
-    justify-content:center;
-    gap:30px;
-    flex-wrap:wrap;
-    margin:40px 0;
-}
 
-.card{
-    width:250px;
-    background:white;
-    border:1px solid #ddd;
-    border-radius:10px;
-    padding:20px;
-    box-shadow:0 2px 8px rgba(0,0,0,0.15);
-    transition:0.3s;
-}
-.card1{
-    width:250px;
-    background:lightblue;
-    border:1px solid #ddd;
-    border-radius:10px;
-    padding:20px;
-    box-shadow:0 2px 8px rgba(0,0,0,0.15);
-    transition:0.3s;
-}
-.card1 img{
-    width:100%;
-    border-radius:8px;
-}
-.card2{
-    width:250px;
-    background:lightcoral;
-    border:1px solid #ddd;
-    border-radius:10px;
-    padding:20px;
-    box-shadow:0 2px 8px rgba(0,0,0,0.15);
-    transition:0.3s;
-}
-.card2 img{
-    width:100%;
-    border-radius:8px;
+/* ==========================================
+   HERO SECTION
+========================================== */
+
+.homepage .hero {
+    text-align: center;
+    padding: 60px 20px;
 }
 
-.card:hover{
-    transform:translateY(-5px);
+.homepage .hero-box {
+    background-color: #0b2d5c;
+    color: white;
+    max-width: 700px;
+    margin: auto;
+    padding: 40px;
+    border-radius: 15px;
+    border: 3px solid #1f4e8c;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
-.card img{
-    width:100%;
-    border-radius:8px;
+.homepage .hero h1 {
+    margin-bottom: 15px;
+    font-size: 2.5rem;
 }
 
-/* Customer Review*/
-
-.reviews{
-    display:flex;
-    justify-content:center;
-    gap:25px;
-    flex-wrap:wrap;
-    margin:40px 0;
-}
-
-.review-card{
-    width:280px;
-    background:white;
-    border:1px solid #ddd;
-    border-radius:10px;
-    padding:20px;
-    box-shadow:0 2px 8px rgba(0,0,0,0.15);
-    transition:0.3s;
-}
-
-.review-card:hover{
-    transform:translateY(-5px);
+.homepage .hero p {
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+    line-height: 1.5;
 }
 
 
-/*Homepage "shop now" button*/
-.button-container {
+/* ==========================================
+   SHOP NOW BUTTON
+========================================== */
+
+.homepage .button-container {
     display: flex;
-    justify-content: center; 
-    margin-top: 30px;        
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.homepage .button {
+    display: inline-block;
+    background-color: #ffb703;
+    color: #0b2d5c;
+    padding: 15px 35px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    border: 3px solid white;
+    transition: 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.homepage .button:hover {
+    background-color: #ffd166;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.homepage .button:active {
+    transform: scale(0.98);
 }
 
 
-/* Product Catalogue */
+/* ==========================================
+   CUSTOMER FAVOURITES
+========================================== */
+
+.homepage .featured {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.homepage .card,
+.homepage .card1,
+.homepage .card2 {
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.homepage .card {
+    background: white;
+}
+
+.homepage .card1 {
+    background: lightblue;
+}
+
+.homepage .card2 {
+    background: lightcoral;
+}
+
+.homepage .card img,
+.homepage .card1 img,
+.homepage .card2 img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.homepage .card:hover,
+.homepage .card1:hover,
+.homepage .card2:hover {
+    transform: translateY(-5px);
+}
+
+.homepage .card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.homepage .card-link:hover .card,
+.homepage .card-link:hover .card1,
+.homepage .card-link:hover .card2 {
+    cursor: pointer;
+}
+
+
+/* ==========================================
+   CUSTOMER REVIEWS
+========================================== */
+
+.homepage .reviews {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.homepage .review-card {
+    width: 280px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.homepage .review-card:hover {
+    transform: translateY(-5px);
+}
+
+
+/* ==========================================
+   WHY SHOP WITH US
+========================================== */
+
+.homepage .benefits-container {
+    display: flex;
+    justify-content: center;
+}
+
+.homepage .benefits {
+    width: fit-content;
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px 40px;
+    background-color: #e0e0e0;
+    list-style: none;
+    text-align: left;
+    border-radius: 10px;
+}
+
+.homepage .benefits li {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+
+/* ==========================================
+   PRODUCT REVIEW PAGES
+========================================== */
+
+.product-image {
+    display: block;
+    width: 300px;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.description {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.review-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+.review-card {
+    width: 280px;
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.review-card:hover {
+    transform: translateY(-8px);
+}
+
+.review-card h3 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.review-card p {
+    line-height: 1.5;
+}
+
+.review-card strong {
+    color: #555;
+}
+
+
+/* Product catalaogue page */
 .shoe{
     width: 300px;
     height: 300px;
@@ -103,41 +253,55 @@
   border: 1px solid #ddd;
 }
 
-
-/*Homepage"why shop with us" section*/
-.benefits {
-    width: fit-content;
-    max-width: 500px;
-    margin: 30px auto;
-    padding: 20px 40px;
-    background-color: #e0e0e0;
-
-    list-style: none;
-    text-align: left;
+.floating-button{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    padding: 12px 24px;
+    cursor: pointer;
+    border: none; 
+    outline: none;
+    background: transparent;
 }
 
-.benefits li {
-    margin: 10px 0;
+.productbutton {
+    display: inline-block;
+    background-color: #ffb703;
+    color: #0b2d5c;
+    padding: 15px 35px;
     font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    border: 3px solid white;
+    transition: 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
+.productbutton:hover {
+    background-color: #ffd166;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
 
-/* Product catalaogue page */
-
+.productbutton:active {
+    transform: scale(0.98);
+}
 
 
 /* resources page */
-.card3 {
+.resources-card {
     background-color: #f9f9f9;
     border: 1px solid #ddd;
 }
 
-img {
+.resources-img {
     max-width: 100%;
     height: auto;
 }
 
-.grid-form {
+.resources-grid-form {
   display: grid;
   grid-template-columns: repeat(2, 1fr); 
   gap: 20px;                             
@@ -145,7 +309,7 @@ img {
   margin: 0 auto;                        
 }
 
-.form-group {
+.resources-form-group {
   display: flex;
   flex-direction: column;                
   align-items: center;                   
@@ -153,7 +317,7 @@ img {
   text-align: center;                    
 }
 
-.form-group input {
+.resources-form-group input {
   width: 80%;                            
 }
 
@@ -162,7 +326,7 @@ img {
 
 
 /* contactus page */
-.box {
+.contact-box {
     position: relative;
     width: 1400px;
     height: 400px;
@@ -171,14 +335,14 @@ img {
     overflow: hidden;   
 }
 
-.box img {
+.contact-box img {
     width: 100%;
     height: 100%;
     object-fit: cover;  
     display: block;
 }
 
-.box h1 {
+.contact-box h1 {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -191,28 +355,53 @@ img {
 
     text-shadow: 2px 2px 8px black;
 }
-.map {
-    width: 1400px;
-    margin: 30px auto;
-    border-radius: 10px;
-    overflow: hidden;
+.contact-featured {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+.contact-card {
+    text-decoration: none;
+    color: inherit;
 }
 
-.map iframe {
+.contact-card1,
+.contact-card2 {
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.contact-card {
+    background: white;
+}
+
+.contact-card1 {
+    background: lightblue;
+}
+
+.contact-card2 {
+    background: lightcoral;
+}
+ .contact-card img,
+.contact-card1 img,
+.contact-card2 img {
     width: 100%;
-    height: 400px;
-    border: none;
+    border-radius: 8px;
 }
-
-.map {
+.contact-map {
     width: 1400px;
     margin: 30px auto;
     border-radius: 10px;
     overflow: hidden;
 }
 
-
-.map iframe {
+.contact-map iframe {
     width: 100%;
     height: 400px;
     border: none;
@@ -271,6 +460,8 @@ h2 {
     display: block;
 }
 
+
+
 /* aboutus page */
 .about-us h1 {
   background: linear-gradient(135deg, #1a1a2e 0%, #000080 100%);
@@ -290,7 +481,7 @@ h2 {
 }
 .about-us {
   max-width: 1400px;
-  margin: 60px auto;
+  margin: 20px auto;
   padding: 50px 40px;
   background-color: #fff;
   border-radius: 12px;
@@ -330,41 +521,3 @@ nav {
   z-index: 100;
 }
 
-nav ul {
-  display: flex;
-  align-items: center;
-  list-style: none;
-  gap: 40px;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #1a1a2e;
-  font-weight: 600;
-  font-size: 15px;
-  letter-spacing: 0.5px;
-  position: relative;
-  padding: 8px 0;
-  transition: color 0.2s ease;
-}
-
-nav ul li a::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: #000080;
-  transition: width 0.25s ease;
-}
-
-nav ul li a:hover {
-  color: #000080;
-}
-
-nav ul li a:hover::after {
-  width: 100%;
-}
