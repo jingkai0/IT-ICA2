@@ -66,7 +66,7 @@
 }
 
 
-/* HOMEPAGE, CUSTOMER'S FAVOURITES */
+/* CUSTORMER'S FAVOURITES */
 
 .homepage .featured {
     display: flex;
@@ -87,7 +87,17 @@
     transition: 0.3s;
 }
 
+.homepage .card {
+    background: white;
+}
 
+.homepage .card1 {
+    background: lightblue;
+}
+
+.homepage .card2 {
+    background: lightcoral;
+}
 
 .homepage .card img,
 .homepage .card1 img,
@@ -114,7 +124,7 @@
 }
 
 
-/* HOMEPAGE, CUSTORMER'S FAVOURITE REVIEWS */
+/* CUSTORMER'S FAVOURITE REVIEWS */
 
 .homepage .reviews {
     display: flex;
@@ -466,7 +476,6 @@ h2 {
   margin: 20px auto;
   padding: 50px 40px;
   background-color: #fff;
-  border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
