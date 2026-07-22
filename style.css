@@ -265,6 +265,30 @@
     background: transparent;
 }
 
+.productbutton {
+    display: inline-block;
+    background-color: #ffb703;
+    color: #0b2d5c;
+    padding: 15px 35px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    border: 3px solid white;
+    transition: 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.productbutton:hover {
+    background-color: #ffd166;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.productbutton:active {
+    transform: scale(0.98);
+}
+
 
 /* resources page */
 .resources-card {
@@ -457,7 +481,7 @@ h2 {
 }
 .about-us {
   max-width: 1400px;
-  margin: 60px auto;
+  margin: 20px auto;
   padding: 50px 40px;
   background-color: #fff;
   border-radius: 12px;
