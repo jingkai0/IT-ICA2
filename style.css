@@ -502,15 +502,7 @@ nav {
   z-index: 100;
 }
 
-h1 {
-  background: linear-gradient(135deg, #1a1a2e 0%, #000080 100%);
-  color: #fff;
-  padding: 60px 20px;
-  letter-spacing: 6px;
-  position: relative;
-  border-radius: 16px;
-  overflow: hidden;
-}
+
  h1::after {
   content: '';
   display: block;
