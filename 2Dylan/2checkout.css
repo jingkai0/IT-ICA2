@@ -1,14 +1,14 @@
-.shopping-card {
+.order-card {
     background-color: #f9f9f9;
     border: 1px solid #ddd;
 }
 
-.shopping-img {
+.order-img {
     max-width: 100%;
     height: auto;
 }
 
-.shopping-grid-form {
+.order-grid-form {
   display: grid;
   grid-template-columns: repeat(2, 1fr); 
   gap: 20px;                             
@@ -16,7 +16,7 @@
   margin: 0 auto;                        
 }
 
-.shopping-form-group {
+.order-form-group {
   display: flex;
   flex-direction: column;                
   align-items: center;                   
@@ -24,6 +24,6 @@
   text-align: center;                    
 }
 
-.shopping-form-group input {
+.order-form-group input {
   width: 80%;                            
 }
