@@ -1,3 +1,102 @@
+/* ==========================================
+   NAVIGATION BAR START
+========================================== */
+
+header{
+    width:100%;
+    background:white;
+    border-bottom:1px solid #ccc;
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+header{
+    width:100%;
+    background:white;
+    border-bottom:1px solid #ccc;
+}
+
+/* ==========================================
+   TOP BAR
+========================================== */
+
+.top-bar{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+    padding:20px 40px;
+}
+
+.logo{
+    width:120px;
+    height:auto;
+}
+
+.search-bar{
+    flex:1;
+    height:45px;
+    padding:0 20px;
+    border:2px solid #bfbfbf;
+    border-radius:30px;
+    font-size:16px;
+}
+
+.cart-button{
+    text-decoration:none;
+    color:black;
+    border:2px solid #bfbfbf;
+    border-radius:10px;
+    padding:12px 20px;
+    font-weight:bold;
+}
+
+.cart-button:hover{
+    background:#f2f2f2;
+}
+
+
+nav{
+    width:100%;
+    border-top:1px solid #ddd;
+    border-bottom:1px solid #ddd;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+nav li{
+    flex:1;
+    border-right:1px solid #999;
+}
+
+nav li:last-child{
+    border-right:none;
+}
+
+nav a{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:60px;
+    text-decoration:none;
+    color:black;
+    font-weight:bold;
+}
+
+nav a:hover{
+    background:#f2f2f2;
+}
+/* ==========================================
+   NAVIGATION BAR END
+========================================== */
+
 .about-us {
   max-width: 1400px;
   margin: 20px auto;
@@ -6,3 +105,37 @@
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
+
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  background-color: #fff;
+}
+
+.about-us h1 {
+    text-align: center;
+    border-radius: 16px;
+  background: linear-gradient(135deg, #1a1a2e 0%, #000080 100%);
+  color: #fff;
+  padding: 60px 20px;
+  letter-spacing: 6px;
+  position: relative;
+}
+
+.about-us h1::after {
+  content: '';
+  display: block;
+  width: 90px;
+  height: 5px;
+  background: #FFFDD0;
+  margin: 20px auto 0;
+}
+
+.about-us {
+  text-align: center;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+

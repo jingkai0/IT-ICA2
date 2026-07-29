@@ -18,6 +18,7 @@ header{
     border-bottom:1px solid #ccc;
 }
 
+
 /* ==========================================
    TOP BAR
 ========================================== */
@@ -93,6 +94,15 @@ nav a{
 nav a:hover{
     background:#f2f2f2;
 }
+
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  background-color: #fff;
+}
+
 /* ==========================================
    NAVIGATION BAR END
 ========================================== */
