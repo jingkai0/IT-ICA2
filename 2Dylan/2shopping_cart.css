@@ -1,3 +1,100 @@
+/* ==========================================
+   NAVIGATION BAR START
+========================================== */
+
+header{
+    width:100%;
+    background:white;
+    border-bottom:1px solid #ccc;
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+header{
+    width:100%;
+    background:white;
+    border-bottom:1px solid #ccc;
+}
+
+/* ==========================================
+   TOP BAR
+========================================== */
+
+.top-bar{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+    padding:20px 40px;
+}
+
+.logo{
+    width:120px;
+    height:auto;
+}
+
+.search-bar{
+    flex:1;
+    height:45px;
+    padding:0 20px;
+    border:2px solid #bfbfbf;
+    border-radius:30px;
+    font-size:16px;
+}
+
+.cart-button{
+    text-decoration:none;
+    color:black;
+    border:2px solid #bfbfbf;
+    border-radius:10px;
+    padding:12px 20px;
+    font-weight:bold;
+}
+
+.cart-button:hover{
+    background:#f2f2f2;
+}
+
+
+nav{
+    width:100%;
+    border-top:1px solid #ddd;
+    border-bottom:1px solid #ddd;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+nav li{
+    flex:1;
+    border-right:1px solid #999;
+}
+
+nav li:last-child{
+    border-right:none;
+}
+
+nav a{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:60px;
+    text-decoration:none;
+    color:black;
+    font-weight:bold;
+}
+
+nav a:hover{
+    background:#f2f2f2;
+}
+
+
 .shopping-card {
     background-color: #f9f9f9;
     border: 1px solid #ddd;
@@ -26,4 +123,152 @@
 
 .shopping-form-group input {
   width: 80%;                            
+}
+
+/* ==========================================
+   CHECKOUT BUTTON
+========================================== */
+.floating-button{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    padding: 12px 24px;
+    cursor: pointer;
+    border: none; 
+    outline: none;
+    background: transparent;
+}
+
+.checkoutbutton {
+    display: inline-block;
+    background-color: #ffb703;
+    color: #0b2d5c;
+    padding: 15px 35px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    border: 3px solid white;
+    transition: 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.checkoutbutton:hover {
+    background-color: #ffd166;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.checkoutbutton:active {
+    transform: scale(0.98);
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+.shoppingcart footer {
+    background-color: #0b2d5c;
+    color: white;
+    padding: 50px 20px;
+    margin-top: 70px;
+}
+
+.shoppingcart .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.shoppingcart .footer-box {
+    flex: 1;
+    min-width: 220px;
+}
+
+.shoppingcart .footer-box:nth-child(2) {
+    text-align: center;
+}
+
+.shoppingcart .footer-box:last-child {
+    text-align: right;
+}
+
+/* Footer Headings */
+
+.shoppingcart .footer-box h3 {
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+/* Button Style */
+
+.shoppingcart .footer-box h3 a {
+    display: inline-block;
+    background-color: #ffb703;
+    color: #0b2d5c;
+    text-decoration: none;
+    padding: 12px 26px;
+    border-radius: 8px;
+    font-weight: bold;
+    border: 2px solid #ffb703;
+    transition: all 0.3s ease;
+}
+
+.shoppingcart .footer-box h3 a:hover {
+    background-color: transparent;
+    color: #ffb703;
+    transform: translateY(-3px);
+}
+
+/* Footer Text */
+
+.shoppingcart .footer-box p {
+    margin: 8px 0;
+    color: #dddddd;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* Any normal links inside footer */
+
+.shoppingcart .footer-box p a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.shoppingcart .footer-box p a:hover {
+    color: #ffb703;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+    .shoppingcart .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .shoppingcart .footer-box,
+    .shoppingcart .footer-box:nth-child(2),
+    .shoppingcart .footer-box:last-child {
+        text-align: center;
+    }
+
+    .shoppingcart .footer-box {
+        width: 100%;
+    }
+
+    .shoppingcart .footer-box h3 a {
+        width: 200px;
+    }
+
 }
