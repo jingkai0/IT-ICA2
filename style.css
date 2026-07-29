@@ -1,133 +1,4 @@
-/* ==========================================
-   HOMEPAGE CSS
-========================================== */
 
-
-/* ==========================================
-   HERO SECTION
-========================================== */
-
-.homepage .hero {
-    text-align: center;
-    padding: 60px 20px;
-}
-
-.homepage .hero-box {
-    background-color: #0b2d5c;
-    color: white;
-    max-width: 700px;
-    margin: auto;
-    padding: 40px;
-    border-radius: 15px;
-    border: 3px solid #1f4e8c;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-}
-
-.homepage .hero h1 {
-    margin-bottom: 15px;
-    font-size: 2.5rem;
-}
-
-.homepage .hero p {
-    margin-bottom: 25px;
-    font-size: 1.1rem;
-    line-height: 1.5;
-}
-
-
-/* ==========================================
-   SHOP NOW BUTTON
-========================================== */
-
-.homepage .button-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 35px;
-}
-
-.homepage .button {
-    display: inline-block;
-    background-color: #ffb703;
-    color: #0b2d5c;
-    padding: 15px 35px;
-    font-size: 18px;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 30px;
-    border: 3px solid white;
-    transition: 0.3s ease;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-}
-
-.homepage .button:hover {
-    background-color: #ffd166;
-    transform: translateY(-3px) scale(1.05);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-}
-
-.homepage .button:active {
-    transform: scale(0.98);
-}
-
-
-/* ==========================================
-   CUSTOMER FAVOURITES
-========================================== */
-
-.homepage .featured {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-    margin: 40px 0;
-}
-
-.homepage .card,
-.homepage .card1,
-.homepage .card2 {
-    width: 250px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-    transition: 0.3s;
-}
-
-.homepage .card {
-    background: white;
-}
-
-.homepage .card1 {
-    background: lightblue;
-}
-
-.homepage .card2 {
-    background: lightcoral;
-}
-
-.homepage .card img,
-.homepage .card1 img,
-.homepage .card2 img {
-    width: 100%;
-    border-radius: 8px;
-}
-
-.homepage .card:hover,
-.homepage .card1:hover,
-.homepage .card2:hover {
-    transform: translateY(-5px);
-}
-
-.homepage .card-link {
-    text-decoration: none;
-    color: inherit;
-}
-
-.homepage .card-link:hover .card,
-.homepage .card-link:hover .card1,
-.homepage .card-link:hover .card2 {
-    cursor: pointer;
-}
 
 
 /* ==========================================
@@ -156,31 +27,6 @@
     transform: translateY(-5px);
 }
 
-
-/* ==========================================
-   WHY SHOP WITH US
-========================================== */
-
-.homepage .benefits-container {
-    display: flex;
-    justify-content: center;
-}
-
-.homepage .benefits {
-    width: fit-content;
-    max-width: 500px;
-    margin: 30px auto;
-    padding: 20px 40px;
-    background-color: #e0e0e0;
-    list-style: none;
-    text-align: left;
-    border-radius: 10px;
-}
-
-.homepage .benefits li {
-    margin: 10px 0;
-    font-size: 18px;
-}
 
 
 
@@ -410,14 +256,7 @@ h2 {
 
 /* aboutus page */
 
-.about-us {
-  max-width: 1400px;
-  margin: 20px auto;
-  padding: 50px 40px;
-  background-color: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-}
+
 
 
 
