@@ -94,40 +94,16 @@ nav a:hover{
     background:#f2f2f2;
 }
 
+/* ==========================================
+   CART
+========================================== */
 
-.shopping-card {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-}
 
-.shopping-img {
-    max-width: 100%;
-    height: auto;
-}
-
-.shopping-grid-form {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); 
-  gap: 20px;                             
-  max-width: 600px;                      
-  margin: 0 auto;                        
-}
-
-.shopping-form-group {
-  display: flex;
-  flex-direction: column;                
-  align-items: center;                   
-  justify-content: center;               
-  text-align: center;                    
-}
-
-.shopping-form-group input {
-  width: 80%;                            
-}
 
 /* ==========================================
    CHECKOUT BUTTON
 ========================================== */
+
 .floating-button{
     position: fixed;
     bottom: 20px;
