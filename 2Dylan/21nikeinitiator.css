@@ -32,7 +32,7 @@ header{
 
 .logo{
     width:120px;
-    height:auto;
+    height:60px;
 }
 
 .search-bar{
@@ -113,6 +113,13 @@ nav a:hover{
     }
 }
 
+img {
+    width: 560px;
+    height: 500px;
+    object-fit: cover;
+    padding: 20px;
+}
+
 /* Left Column */
 .left-column {
     display: flex;
@@ -121,15 +128,8 @@ nav a:hover{
 }
 
 .product-picture {
-    border: 2px solid #333;
-    border-radius: 12px;
-    background: #eaeaea;
-    height: 350px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    font-size: 18px;
-    font-weight: bold;
 }
 
 .product-description {
@@ -221,14 +221,14 @@ nav a:hover{
    FOOTER
 ========================================== */
 
-.urbanstreet footer {
+.nikeinitiator footer {
     background-color: #0b2d5c;
     color: white;
     padding: 50px 20px;
     margin-top: 70px;
 }
 
-.urbanstreet .footer-container {
+.nikeinitiator .footer-container {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -238,22 +238,22 @@ nav a:hover{
     gap: 40px;
 }
 
-.urbanstreet .footer-box {
+.nikeinitiator .footer-box {
     flex: 1;
     min-width: 220px;
 }
 
-.urbanstreet .footer-box:nth-child(2) {
+.nikeinitiator .footer-box:nth-child(2) {
     text-align: center;
 }
 
-.urbanstreet .footer-box:last-child {
+.nikeinitiator .footer-box:last-child {
     text-align: right;
 }
 
 /* Footer Headings */
 
-.urbanstreet .footer-box h3 {
+.nikeinitiator .footer-box h3 {
     margin-bottom: 20px;
     font-size: 1.3rem;
     font-weight: bold;
@@ -261,7 +261,7 @@ nav a:hover{
 
 /* Button Style */
 
-.urbanstreet .footer-box h3 a {
+.nikeinitiator .footer-box h3 a {
     display: inline-block;
     background-color: #ffb703;
     color: #0b2d5c;
@@ -273,7 +273,7 @@ nav a:hover{
     transition: all 0.3s ease;
 }
 
-.urbanstreet .footer-box h3 a:hover {
+.nikeinitiator .footer-box h3 a:hover {
     background-color: transparent;
     color: #ffb703;
     transform: translateY(-3px);
@@ -281,7 +281,7 @@ nav a:hover{
 
 /* Footer Text */
 
-.urbanstreet .footer-box p {
+.nikeinitiator .footer-box p {
     margin: 8px 0;
     color: #dddddd;
     line-height: 1.6;
@@ -290,13 +290,13 @@ nav a:hover{
 
 /* Any normal links inside footer */
 
-.urbanstreet .footer-box p a {
+.nikeinitiator .footer-box p a {
     color: white;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
-.urbanstreet .footer-box p a:hover {
+.nikeinitiator .footer-box p a:hover {
     color: #ffb703;
 }
 
@@ -304,23 +304,23 @@ nav a:hover{
 
 @media (max-width: 768px) {
 
-    .shoppingcart .footer-container {
+    .nikeinitiator .footer-container {
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
 
-    .shoppingcart .footer-box,
-    .shoppingcart .footer-box:nth-child(2),
-    .shoppingcart .footer-box:last-child {
+    .nikeinitiator .footer-box,
+    .nikeinitiator .footer-box:nth-child(2),
+    .nikeinitiator .footer-box:last-child {
         text-align: center;
     }
 
-    .shoppingcart .footer-box {
+    .nikeinitiator .footer-box {
         width: 100%;
     }
 
-    .shoppingcart .footer-box h3 a {
+    .nikeinitiator .footer-box h3 a {
         width: 200px;
     }
 
