@@ -120,10 +120,11 @@ nav a:hover{
 }
 
 img {
-    width: 560px;
+    width: 550px;
     height: 500px;
     object-fit: cover;
     padding: 20px;
+    margin-top: -15px;
 }
 
 /* Left Column */
@@ -175,7 +176,8 @@ img {
     padding: 10px;
     background: #fff;
     font-size: 21px;
-    margin-top: -5px;
+    margin-top: 20px;
+
 }
 
 .product-description h3 {
@@ -186,8 +188,9 @@ img {
 .product-size {
     font-size: 28px;
     padding-top: -50px ;
-    margin-bottom: -47px;
+    margin-bottom: -50px;
     padding-left: 10px;
+    margin-top: -35px;
 }
 
 .size-grid {
