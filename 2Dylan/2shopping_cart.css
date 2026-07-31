@@ -126,9 +126,10 @@ body {
     margin-bottom: 30px;
 }
 
-.logo {
-    font-size: 24px;
-    font-weight: bold;
+.logo{
+    width:120px;
+    height:60px;
+    margin:-50px;
 }
 
 .btn-checkout-top {
