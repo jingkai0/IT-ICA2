@@ -143,7 +143,7 @@ img {
     background-color: transparent;
     transition: background 0.2s;
     padding: 20px;
-    margin-top: 19px;
+    margin-top: 52px;
     margin-left: 20px;
     margin-right: 35px;
 }
@@ -191,7 +191,7 @@ img {
     padding-top: -50px ;
     margin-bottom: -50px;
     padding-left: 10px;
-    margin-top: -35px;
+    margin-top: -5px;
 }
 
 .size-grid {
@@ -203,6 +203,7 @@ img {
     background: #333;
     gap: 2px;
     margin: 10px;
+    margin-top: 9px;
 }
 
 .size-btn {
