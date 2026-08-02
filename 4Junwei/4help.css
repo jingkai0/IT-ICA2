@@ -1,3 +1,7 @@
+body {
+    background-color:gray;
+    margin: 0;
+}
 .logo{
     width:120px;
     height:auto;
@@ -15,11 +19,25 @@
     gap:20px;
     padding:20px 40px;
 }
-.black-arrow{
+
+.container{
+    width:80%;
+    max-width:1100px;
+    margin:auto;
+    background:white;
+    border-radius:20px;
+    padding:40px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.15);
+    transform:translateY(10%);
+}
+.black-arrow {
     color:black;
     text-decoration:none;
     font-size:22px;
     font-weight:bold;
+    left:30px;
+    top:30px;
+    position:fixed;
     
 }
 .top-bar h1{
@@ -29,10 +47,16 @@
     font-weight:bold;
     position:absolute;
     transform:translateX(-50%);
-    left:48%
+    left:150px
 }
-.hero{
-    width:100px
-    padding:20px;
-    text-align:center;
+.hero {
+   font-size: 20px;
+    text-align: left;
+    width: 100%;
+    margin-top: 20px;
+    line-height: 1.8;
+
+}
+.faqs-card {
+    
 }
