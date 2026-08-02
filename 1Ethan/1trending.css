@@ -46,7 +46,7 @@ header{
     font-size:16px;
 }
 
-.cart-button{
+.help-button{
     text-decoration:none;
     color:black;
     border:2px solid #bfbfbf;
@@ -55,7 +55,7 @@ header{
     font-weight:bold;
 }
 
-.cart-button:hover{
+.help-button:hover{
     background:#f2f2f2;
 }
 

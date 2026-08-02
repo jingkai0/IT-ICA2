@@ -46,7 +46,7 @@ header{
     font-size:16px;
 }
 
-.cart-button{
+.help-button{
     text-decoration:none;
     color:black;
     border:2px solid #bfbfbf;
@@ -55,7 +55,7 @@ header{
     font-weight:bold;
 }
 
-.cart-button:hover{
+.help-button:hover{
     background:#f2f2f2;
 }
 
@@ -135,7 +135,7 @@ img {
     gap: 1px;
 }
 
-.add-to-cart {
+.btn-checkout {
     border: 2px solid #333;
     border-radius: 8px;
     font-size: 20px;
@@ -148,9 +148,15 @@ img {
     margin-right: 35px;
 }
 
-.add-to-cart:hover {
+.btn-checkout:hover {
     background: #333;
     color: #fff;
+}
+
+.btn-checkout a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
 }
 
 
