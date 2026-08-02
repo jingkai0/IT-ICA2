@@ -1,6 +1,23 @@
 /* ==========================================
-   NAVIGATION BAR START
+   GENERAL
 ========================================== */
+
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f5f5f5;
+}
+
+main{
+    width:90%;
+    margin:30px auto;
+}
+
+/* ==========================================
+   NAVIGATION BAR
+========================================== */
+
+/* Header */
 
 header{
     width:100%;
@@ -8,19 +25,7 @@ header{
     border-bottom:1px solid #ccc;
 }
 
-/* ==========================================
-   HEADER
-========================================== */
-
-header{
-    width:100%;
-    background:white;
-    border-bottom:1px solid #ccc;
-}
-
-/* ==========================================
-   TOP BAR
-========================================== */
+/* Top Bar */
 
 .top-bar{
     display:flex;
@@ -30,12 +35,16 @@ header{
     padding:20px 40px;
 }
 
+/* Logo */
+
 .logo{
     width:120px;
     height:60px;
     margin:-30px;
-    object-fit: cover;
+    object-fit:cover;
 }
+
+/* Search Bar */
 
 .search-bar{
     flex:1;
@@ -46,19 +55,23 @@ header{
     font-size:16px;
 }
 
-.cart-button{
+/* Help Button */
+
+.help-button{
     text-decoration:none;
     color:black;
     border:2px solid #bfbfbf;
     border-radius:10px;
     padding:12px 20px;
     font-weight:bold;
+    transition:0.3s;
 }
 
-.cart-button:hover{
+.help-button:hover{
     background:#f2f2f2;
 }
 
+/* Navigation Menu */
 
 nav{
     width:100%;
@@ -90,19 +103,394 @@ nav a{
     text-decoration:none;
     color:black;
     font-weight:bold;
+    transition:0.3s;
 }
 
 nav a:hover{
     background:#f2f2f2;
 }
 
-.site-header {
-  position: sticky;
-  top: 0;
-  z-index: 9999;
-  background-color: #fff;
+nav a.active{
+    background:#0b2d5c;
+    color:white;
+}
+
+/* Sticky Header */
+
+.site-header{
+    position:sticky;
+    top:0;
+    z-index:9999;
+    background:white;
 }
 
 /* ==========================================
-   NAVIGATION BAR END
+   PAGE TITLE
 ========================================== */
+
+.page-title{
+    background:#0b2d5c;
+    text-align:center;
+    padding:40px;
+    border-radius:15px;
+    margin-bottom:40px;
+    box-shadow:0 3px 10px rgba(0,0,0,.1);
+}
+
+.page-title h1{
+    margin:0;
+    color:white;
+    font-size:42px;
+}
+
+.page-title p{
+    margin-top:12px;
+    color:#f2f2f2;
+    font-size:18px;
+}
+
+/* ==========================================
+   FEATURED SHOWCASE
+========================================== */
+
+.featured-showcase{
+    margin-bottom:45px;
+}
+
+.featured-heading{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.featured-heading span{
+    display:block;
+    color:#1f4e8c;
+    font-size:14px;
+    font-weight:bold;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    margin-bottom:8px;
+}
+
+.featured-heading h2{
+    margin:0;
+    font-size:36px;
+    color:#0b2d5c;
+}
+
+.featured-heading p{
+    margin-top:12px;
+    color:#666;
+    font-size:17px;
+}
+
+/* ==========================================
+   FEATURED CAROUSEL
+========================================== */
+
+/* Carousel Container */
+
+.carousel-container{
+    width:100%;
+    overflow:hidden;
+    background:white;
+    border-radius:20px;
+    margin-bottom:80px;
+    padding:30px 0;
+    box-shadow:0 3px 10px rgba(0,0,0,.1);
+}
+
+/* Sliding Track */
+
+.carousel-track{
+    display:flex;
+    width:max-content;
+    animation:scroll 20s linear infinite;
+    will-change:transform;
+}
+
+/* Individual Slide */
+
+.slide{
+    width:260px;
+    margin:0 15px;
+    flex-shrink:0;
+    text-align:center;
+    transition:transform .3s;
+}
+
+.slide:hover{
+    transform:translateY(-8px);
+}
+
+/* Product Image */
+
+.slide img{
+    width:220px;
+    height:220px;
+    object-fit:contain;
+    display:block;
+    margin:auto;
+}
+
+/* Product Name */
+
+.slide h3{
+    margin-top:15px;
+    color:#0b2d5c;
+    font-size:20px;
+}
+
+/* Infinite Scroll Animation */
+
+@keyframes scroll{
+
+    0%{
+        transform:translateX(0);
+    }
+
+    100%{
+        transform:translateX(-1180px);
+    }
+
+}
+/* ==========================================
+   PRODUCT GRID
+========================================== */
+
+/* Product Grid Layout */
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:30px;
+    margin-bottom:60px;
+}
+
+/* ==========================================
+   PRODUCT CARD
+========================================== */
+
+/* Individual Product Card */
+
+.product-card{
+    background:white;
+    border-radius:18px;
+    padding:20px;
+    text-align:center;
+    box-shadow:0 3px 10px rgba(0,0,0,.12);
+    transition:all 0.3s ease;
+}
+
+/* Card Hover */
+
+.product-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 8px 18px rgba(0,0,0,.18);
+}
+
+/* Product Image */
+
+.product-card img{
+    width:100%;
+    height:220px;
+    object-fit:contain;
+    margin-bottom:15px;
+}
+
+/* Product Name */
+
+.product-card h3{
+    margin:15px 0 10px;
+    color:#0b2d5c;
+    font-size:22px;
+}
+
+/* Product Price */
+
+.product-card p{
+    font-size:20px;
+    font-weight:bold;
+    color:#444;
+    margin-bottom:20px;
+}
+
+/* ==========================================
+   BUTTON
+========================================== */
+
+/* View Product Button */
+
+.buy-btn{
+    display:inline-block;
+    background:#0b2d5c;
+    color:white;
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:10px;
+    font-weight:bold;
+    transition:all .3s ease;
+}
+
+.buy-btn:hover{
+    background:#18498f;
+    transform:scale(1.05);
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+footer{
+    background:#0b2d5c;
+    color:white;
+    padding:50px 20px;
+    margin-top:70px;
+}
+
+/* Footer Layout */
+
+.footer-container{
+    max-width:1200px;
+    margin:0 auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    flex-wrap:wrap;
+    gap:40px;
+}
+
+/* Footer Columns */
+
+.footer-box{
+    flex:1;
+    min-width:220px;
+}
+
+.footer-box:nth-child(2){
+    text-align:center;
+}
+
+.footer-box:last-child{
+    text-align:right;
+}
+
+/* Footer Headings */
+
+.footer-box h3{
+    margin-bottom:20px;
+    font-size:1.3rem;
+    font-weight:bold;
+}
+
+/* Footer Buttons */
+
+.footer-box h3 a{
+    display:inline-block;
+    background:#ffb703;
+    color:#0b2d5c;
+    text-decoration:none;
+    padding:12px 26px;
+    border-radius:8px;
+    border:2px solid #ffb703;
+    transition:all .3s ease;
+}
+
+.footer-box h3 a:hover{
+    background:transparent;
+    color:#ffb703;
+    transform:translateY(-3px);
+}
+
+/* Footer Text */
+
+.footer-box p{
+    margin:8px 0;
+    color:#dddddd;
+    line-height:1.6;
+    font-size:0.95rem;
+}
+
+/* Footer Links */
+
+.footer-box p a{
+    color:white;
+    text-decoration:none;
+    transition:color .3s ease;
+}
+
+.footer-box p a:hover{
+    color:#ffb703;
+}
+
+/* ==========================================
+   RESPONSIVE DESIGN
+========================================== */
+
+/* Tablets */
+
+@media (max-width:900px){
+
+    .products{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .top-bar{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .search-bar{
+        width:100%;
+    }
+
+    .footer-container{
+        flex-direction:column;
+        text-align:center;
+        align-items:center;
+    }
+
+    .footer-box,
+    .footer-box:nth-child(2),
+    .footer-box:last-child{
+        text-align:center;
+        width:100%;
+    }
+
+}
+
+/* Mobile */
+
+@media (max-width:600px){
+
+    nav ul{
+        flex-direction:column;
+    }
+
+    nav li{
+        border-right:none;
+        border-bottom:1px solid #ddd;
+    }
+
+    .products{
+        grid-template-columns:1fr;
+    }
+
+    .page-title h1{
+        font-size:32px;
+    }
+
+    .featured-heading h2{
+        font-size:28px;
+    }
+
+    .slide{
+        width:220px;
+    }
+
+    .slide img{
+        width:180px;
+        height:180px;
+    }
+
+}
