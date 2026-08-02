@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="2checkout.css">
 </head>
 
+<body>
+
     <form onsubmit="event.preventDefault();">
 
         <div class="checkout-layout">
             
-            <!-- Left Column -->
-            <div class="main-content">
+            <div>
 
                 <section>
 
@@ -22,6 +23,41 @@
                      <a href="../1Ethan/1homepage.html" class="back-link">← Back to Home</a>
 
                     </div>
+
+                </section>
+
+                <section>
+
+                    <div class="product-selector-container">
+
+                     <label for="product-select" class="selector-label">Choose a Product:</label>
+  
+                        <div class="custom-select-wrapper">
+
+                          <select id="product-select" onchange="productSelected(this.value)">
+                          <option value="" disabled selected>-- Select a Product --</option>
+                          <option value="Nike Dart 9">Nike Dart 9 ($199.00)</option>
+                          <option value="Adidas Hoops 3.0 .Low">Adidas Hoops 3.0 .Low ($169.00)</option>
+                          <option value="On Running Cloud">On Running Cloud ($249.00)</option>
+                          <option value="Nike Dunk Low Retro">Nike Dunk Low Retro ($179.00)</option>
+                          <option value="Adidas Ori Samba">Adidas Ori Samba ($159.00)</option>
+                          <option value="ASICS Gel-1130">ASICS Gel-1130 ($189.00)</option>
+                         </select>
+
+                        </div>
+
+          
+                        <div id="selection-display" class="hidden-display">
+
+                          You selected: <span id="product-name">None</span>
+                      
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <section>
 
                     <h2>Delivery</h2>
                     
@@ -97,39 +133,10 @@
                             <a href="../5Jayden/5tqfororder.html">Place Order</a>
                             
                         </button>
+
                     </div>
 
                 </section>
-
-            </div>
-
-            <!-- Right Column -->
-            <div class="sidebar-container">
-
-                <div class="order-summary-box">
-
-                    <h3>Order Summary <span class="sticky-tag"></span></h3>
-                    
-                    <div class="product-list">
-
-                        <div class="product-item">
-                            <span>Product Item 1</span>
-                            <span>$29.99</span>
-                        </div>
-
-                        <div class="product-item">
-                            <span>Product Item 2</span>
-                            <span>$49.99</span>
-                        </div>
-
-                    </div>
-
-                    <div class="totals-row">
-                        <span>Subtotal</span>
-                        <span>$79.98</span>
-                    </div>
-
-                </div>
 
             </div>
 
@@ -137,7 +144,9 @@
 
     </form>
 
-    <footer>
+</body>
+
+ <footer>
 
     <div class="footer-container">
 
@@ -161,6 +170,4 @@
 
   </footer>
 
- </body>
- 
 </html>
