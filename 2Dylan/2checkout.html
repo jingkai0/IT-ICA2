@@ -1,90 +1,161 @@
 <!-- Author: Dylan, admin no: 261424B-->
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-         <meta charset="UTF-8">
-         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         <title>REShoe - Checkout </title>
-         <link rel="stylesheet" href="2checkout.css">
-        
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reshoe</title>
+    <link rel="stylesheet" href="2checkout.css">
+</head>
 
-    <body class="checkout">
-         <h2>📄 Order Form</h2>
-            <p>
-                If you would like to place an order for our products, please fill out the order form below. 
-                We will get back to you as soon as possible to confirm your order and provide further details.
-            </p>
+    <form onsubmit="event.preventDefault();">
+        <div class="checkout-layout">
+            
+            <!-- Left Column: Shipping & Payment Info -->
+            <div class="main-content">
 
-         <div class="checkout-card">
+                <!-- Delivery Section -->
+                <section>
 
-             <form action="5tqfororder.html" method="get" class="checkout-grid-form">
-             <!-- column 1 content -->
-                 <div class="checkout-form-group">
-                     <label for="name">Full name:</label><br>
-                     <input type="text" id="name" name="name" required><br><br>
+                    <div class="checkout-header">
 
-                     <label for="email">Email:</label><br>
-                     <input type="email" id="email" name="email" required><br><br>
+                    <a href="../1Ethan/1homepage.html" class="back-link">← Back to Home</a>
 
-                     <label for="phone">Phone number:</label><br>
-                     <input type="tel" id="phone" name="phone" required><br><br>
-                 </div>
-             
-             <!-- column 2 content -->
-                 <div class="checkout-form-group">                     
-                     <label for="Address">Address:</label><br>
-                     <input type="text" id="Address" name="Address" required><br><br>
+                    <h2>Delivery</h2>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
 
-                     <label for="Product">Product:</label><br>
-                     <input type="text" id="Product" name="Product" required><br><br>
-                 </div>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required>
+                    </div>
 
-                     <input type="submit" value="Submit">
-                     <input type="reset" value="Clear Form">
-             </form>
-           </div>
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <input type="text" id="address" required>
+                    </div>
 
-           
-           
-    </body>
+                    <div class="form-group">
+                        <label for="phone">Phone number</label>
+                        <input type="tel" id="phone" required>
+                    </div>
+                </section>
 
-    <footer>
+                <!-- Payment Selection Section -->
+                <section>
+                    <h2>Payment</h2>
+                    <div class="form-group">
+                        <label class="radio-label">
+                            <input type="radio" name="payment-method" checked>
+                            Credit
+                            <input type="radio" name="payment-method" checked>
+                             Debit
+                        </label>
+                    </div>
 
-        <div class="footer-container">
+                    <!-- Payment Details Form Fields -->
+                    <div class="form-group">
+                        <label for="card-name">Name on card</label>
+                        <input type="text" id="card-name" required>
+                    </div>
 
-            <div class="footer-box">
+                    <div class="form-group">
+                        <label for="card-number">Card number</label>
+                        <input type="text" id="card-number" placeholder="0000 0000 0000 0000" required>
+                    </div>
 
-                <h3>Help</h3>
-
-                <p><a href="resources.html">FAQs</a></p>
-
-                <p><a href="resources.html">Shipping</a></p>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="card-expiry">MM/YY</label>
+                            <input type="text" id="card-expiry" placeholder="MM/YY" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="card-cvc">Security code</label>
+                            <input type="text" id="card-cvc" placeholder="CVC" required>
+                        </div>
+                    </div>
+                </section>
 
             </div>
 
+            <!-- Right Column: Sticky Order Summary -->
+            <div class="sidebar-container">
+                <div class="order-summary-box">
+                    <h3>Order Summary <span class="sticky-tag"></span></h3>
+                    
+                    <div class="product-list">
+                        <div class="product-item">
+                            <span>Product Item 1</span>
+                            <span>$29.99</span>
+                        </div>
+                        <div class="product-item">
+                            <span>Product Item 2</span>
+                            <span>$49.99</span>
+                        </div>
+                    </div>
 
-            <div class="footer-box">
+                    <div class="totals-row">
+                        <span>Subtotal</span>
+                        <span>$79.98</span>
+                    </div>
 
-                <h3>ReShoe</h3>
-
-                <p>&copy; 2026 ReShoe</p>
-
-                <p>Affordable Sneakers for Everyone</p>
-
-            </div>
-
-
-            <div class="footer-box">
-
-                <h3>Contact Us</h3>
-
-                <p><a href="contactus.html">Contact Page</a></p>
-
-                <p>info@reshoe.com</p>
-
+                    <button type="submit" class="btn-submit">Place order</button>
+                </div>
             </div>
 
         </div>
+    </form>
 
-    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+
+    <footer>
+
+    <div class="footer-container">
+
+        <div class="footer-box">
+            <h3><a href="../3Yuhao/3aboutus.html">About Us</a></h3>
+            <p>Learn more about ReShoe and our mission.</p>
+        </div>
+
+        <div class="footer-box">
+            <h3>ReShoe</h3>
+            <p>&copy; 2026 ReShoe</p>
+            <p>Affordable Sneakers for Everyone</p>
+        </div>
+
+        <div class="footer-box">
+            <h3><a href="../4Junwei/4contactus.html">Contact Us</a></h3>
+            <p>info@reshoe.com</p>
+        </div>
+
+    </div>
+
+  </footer>
+ </body>
+</html>

@@ -1,3 +1,5 @@
+
+
 /* ==========================================
    NAVIGATION BAR START
 ========================================== */
@@ -32,7 +34,9 @@ header{
 
 .logo{
     width:120px;
-    height:auto;
+    height:60px;
+    margin: -20px;
+    object-fit: cover;
 }
 
 .search-bar{
@@ -94,51 +98,201 @@ nav a:hover{
     background:#f2f2f2;
 }
 
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  background-color: #fff;
+}
 /* ==========================================
    CART
 ========================================== */
 
-
-
-/* ==========================================
-   CHECKOUT BUTTON
-========================================== */
-
-.floating-button{
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 1000;
-    padding: 12px 24px;
-    cursor: pointer;
-    border: none; 
-    outline: none;
-    background: transparent;
+/* Base Reset & Typography */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
-.checkoutbutton {
-    display: inline-block;
-    background-color: #ffb703;
-    color: #0b2d5c;
-    padding: 15px 35px;
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
+}
+
+/* Page 1: Header Styles */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 20px 40px;
+    border: 2px solid #333;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+
+.btn-checkout-top {
+    text-decoration: none;
+    color: #333;
+    border: 2px solid #333;
+    padding: 10px 30px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.btn-checkout-top:hover {
+    background: #333;
+    color: #fff;
+}
+
+/* Page 1: Product Grid */
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.products-list-full {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1-fraction));
+    gap: 20px;
+}
+
+.product-card {
+    background: #fff;
+    border: 2px solid #333;
+    border-radius: 16px;
+    padding: 24px;
+}
+
+.product-card h2 {
+    margin-bottom: 10px;
+}
+
+.product-card .price {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+/* Page 2: Split Layout (Cart Page) */
+.cart-container {
+    max-width: 1100px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 40px;
+}
+
+@media (max-width: 768px) {
+    .cart-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Left Column Styling */
+.items-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+}
+
+.back-link {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+.item-count {
+    font-weight: bold;
+}
+
+.product-basket-card {
+    background: #fff;
+    border: 2px solid #333;
+    border-radius: 24px;
+    padding: 30px;
+    min-height: 120px;
+}
+
+/* Right Column Styling (Summary Box) */
+.summary-column {
+    background: #fff;
+    border: 2px solid #333;
+    border-radius: 16px;
+    padding: 30px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.summary-details {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+.summary-row.total {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+
+/* Pill Shaped Checkout Button */
+.btn-checkout-main {
+    background: transparent;
+    color: #333;
+    border: 2px solid #333;
+    padding: 15px;
+    border-radius: 40px;
     font-size: 18px;
     font-weight: bold;
-    text-decoration: none;
-    border-radius: 30px;
-    border: 3px solid white;
-    transition: 0.3s ease;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    transition: all 0.2s ease;
 }
 
-.checkoutbutton:hover {
-    background-color: #ffd166;
-    transform: translateY(-3px) scale(1.05);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+.btn-checkout-main:hover {
+    background: #333;
+    color: #fff;
 }
 
-.checkoutbutton:active {
-    transform: scale(0.98);
-}
+
+
+
+
 
 /* ==========================================
    FOOTER
@@ -248,3 +402,11 @@ nav a:hover{
     }
 
 }
+
+
+
+
+/* experiment */
+
+
+

@@ -1,0 +1,19 @@
+body {
+    text-align: center;
+    margin: 0 auto;
+}
+.order-details {
+    width: 30%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    border: 2px solid black;
+}
+.order-details th,
+.order-details td {
+    border: 1px solid black;
+    padding: 15px;
+}
+
+.order-details th {
+    text-align: center;
+}

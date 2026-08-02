@@ -33,7 +33,9 @@ header{
 
 .logo{
     width:120px;
-    height:auto;
+    height:60px;
+    margin:-30px;
+    object-fit: cover;
 }
 
 .search-bar{
@@ -404,3 +406,4 @@ nav a:hover{
     }
 
 }
+

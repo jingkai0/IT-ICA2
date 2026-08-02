@@ -10,4 +10,10 @@
     gap:20px;
     padding:20px 40px;
 }
-.b
+
+.logo{
+    width:120px;
+    height:60px;
+    margin:-30px;
+    object-fit: cover;
+}

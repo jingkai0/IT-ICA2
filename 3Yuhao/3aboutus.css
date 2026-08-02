@@ -32,7 +32,9 @@ header{
 
 .logo{
     width:120px;
-    height:auto;
+    height:60px;
+    margin:-30px;
+    object-fit: cover;
 }
 
 .search-bar{
@@ -93,19 +95,6 @@ nav a{
 nav a:hover{
     background:#f2f2f2;
 }
-/* ==========================================
-   NAVIGATION BAR END
-========================================== */
-
-.about-us {
-  max-width: 1400px;
-  margin: 20px auto;
-  padding: 50px 40px;
-  background-color: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-}
-
 
 .site-header {
   position: sticky;
@@ -113,6 +102,10 @@ nav a:hover{
   z-index: 9999;
   background-color: #fff;
 }
+
+/* ==========================================
+   NAVIGATION BAR END
+========================================== */
 
 .about-us h1 {
     text-align: center;
@@ -133,9 +126,18 @@ nav a:hover{
   margin: 20px auto 0;
 }
 
-.about-us {
+footer p {
   text-align: center;
-  max-width: 1400px;
   margin: 0 auto;
+}
+
+.about-us {
+  max-width: 1400px;
+  margin: 40px auto;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
 }
 

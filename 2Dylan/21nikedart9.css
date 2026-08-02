@@ -33,7 +33,7 @@ header{
 .logo{
     width:120px;
     height:60px;
-    margin:-30px;
+    margin: -50px;
     object-fit: cover;
 }
 
@@ -103,131 +103,121 @@ nav a:hover{
   background-color: #fff;
 }
 
-/* ==========================================
-   NAVIGATION BAR END
-========================================== */
-/* ==========================================
-   HERO SECTION
-========================================== */
 
-.newreleases .hero {
-    text-align: center;
-    padding: 60px 20px;
-}
-
-.newreleases .hero-box {
-    background: #0b2d5c;
-    color: white;
-    max-width: 850px;
-    margin: auto;
-    padding: 50px;
-    border-radius: 20px;
-    border: 3px solid #1f4e8c;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.25);
-}
-
-.newreleases .hero h1 {
-    font-size: 2.7rem;
+/* Main Layout */
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    flex-grow: 1;
     margin-bottom: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.newreleases .hero p {
-    font-size: 1.15rem;
-    line-height: 1.6;
-}
-/* ==========================================
-   PAGE TITLE
-========================================== */
-
-.page-title{
-    text-align:center;
-    padding:50px 20px 30px;
+@media (max-width: 768px) {
+    .main-container {
+        grid-template-columns: 1fr;
+    }
 }
 
-.page-title h1{
-    font-size:42px;
-    color:#0b2d5c;
-    margin-bottom:10px;
+img {
+    width: 550px;
+    height: 500px;
+    object-fit: contain;
+    padding: 20px;
+    margin-top: -15px;
 }
 
-.page-title p{
-    color:#666;
-    font-size:18px;
+/* Left Column */
+.left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
 }
 
-/* ==========================================
-   FEATURED BANNER
-========================================== */
-
-.featured-banner{
-    width:90%;
-    margin:0 auto 50px;
+.add-to-cart {
+    border: 2px solid #333;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: transparent;
+    transition: background 0.2s;
+    padding: 20px;
+    margin-top: 52px;
+    margin-left: 20px;
+    margin-right: 35px;
 }
 
-.featured-banner img{
-    width:100%;
-    height:350px;
-    object-fit:cover;
-    border-radius:15px;
-    border:3px solid #0b2d5c;
+.add-to-cart:hover {
+    background: #333;
+    color: #fff;
 }
 
-/* ==========================================
-   PRODUCTS
-========================================== */
 
-.products{
-    width:90%;
-    margin:auto;
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:30px;
-    padding-bottom:60px;
+/* Right Column */
+.right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.product-card{
-    background:white;
-    border:2px solid #d9d9d9;
-    border-radius:15px;
-    text-align:center;
-    padding:20px;
-    transition:0.3s;
+.product-name {
+    font-size: 28px;
+    padding: 10px;
+    margin-top: -20px;
 }
 
-.product-card:hover{
-    transform:translateY(-5px);
-    box-shadow:0 8px 18px rgba(0,0,0,0.15);
+.product-name p {
+    font-size: 20px;
+    margin-top: -35px;
+    margin-bottom: 35px;
 }
 
-.product-card img{
-    width:100%;
-    height:220px;
-    object-fit:contain;
-    margin-bottom:15px;
+.product-description {
+    padding: 10px;
+    background: #fff;
+    font-size: 21px;
+    margin-top: 20px;
+
 }
 
-.product-card h3{
-    margin:10px 0;
-    color:#0b2d5c;
+.product-description h3 {
+    text-decoration: underline;
+    margin-bottom: -20px;
 }
 
-.product-card p{
-    font-size:18px;
-    margin-bottom:20px;
+.product-size {
+    font-size: 28px;
+    padding-top: -50px ;
+    margin-bottom: -50px;
+    padding-left: 10px;
+    margin-top: -6px;
 }
 
-.product-card a{
-    display:inline-block;
-    background:#0b2d5c;
-    color:white;
-    text-decoration:none;
-    padding:12px 22px;
-    border-radius:8px;
+.size-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 2px solid #333;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #333;
+    gap: 2px;
+    margin: 10px;
 }
 
-.product-card a:hover{
-    background:#184b91;
+.size-btn {
+    background: #fff;
+    border: none;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.2s;
 }
+
+.size-btn:hover {
+    background: #f0f0f0;
+}
+
 
 /* ==========================================
    FOOTER
