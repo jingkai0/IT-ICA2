@@ -19,6 +19,28 @@ body {
     margin: 50px 0;
 }
 
+/* Background image */
+body {
+    /* Set the path to your image file */
+    background-image: 
+
+    /* Prevent the image from tiling/repeating */
+    background-repeat: no-repeat;
+
+    /* Stretch the photo to cover the whole screen */
+    background-size: cover;
+
+    /* Center the image horizontally and vertically */
+    background-position: center;
+
+    /* Keep the background fixed while scrolling */
+    background-attachment: fixed;
+
+    /* Fallback color if the image fails to load */
+    background-color: #333333;
+}
+
+
 /* Responsive Main Layout Split */
 .checkout-layout {
     display: grid;
