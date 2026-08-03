@@ -1,3 +1,8 @@
+/* Base style */
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
 /* ==========================================
    NAVIGATION BAR START
 ========================================== */
@@ -106,11 +111,9 @@ nav a:hover{
 /* ==========================================
    NAVIGATION BAR END
 ========================================== */
-
-
 .brands h1 {
-    text-align: center;
-    border-radius: 16px;
+  text-align: center; 
+  border-radius: 16px;
   background: linear-gradient(135deg, #1a1a2e 0%, #000080 100%);
   color: #fff;
   padding: 60px 20px;
@@ -125,4 +128,192 @@ nav a:hover{
   height: 5px;
   background: #FFFDD0;
   margin: 20px auto 0;
+}
+
+.brand-section {
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.brand-title {
+  font-size: 2rem;
+  color: #1a1a2e;
+  margin-bottom: 15px;
+  border-bottom: 3px solid #000080;
+  display: inline-block;
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  align-items: stretch;
+}
+
+.product-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.product-card h3 {
+  color: #000080;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-card .price {
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.view-btn {
+  display: inline-block;
+  background-color: #1a1a2e;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.view-btn:hover {
+  background-color: #000080;
+}
+
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+footer {
+    background-color: #0b2d5c;
+    color: white;
+    padding: 50px 20px;
+    margin-top: 70px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-box {
+    flex: 1;
+    min-width: 220px;
+}
+
+.footer-box:nth-child(2) {
+    text-align: center;
+}
+
+.footer-box:last-child {
+    text-align: right;
+}
+
+/* Footer Headings */
+
+.footer-box h3 {
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+/* Button Style */
+
+.footer-box h3 a {
+    display: inline-block;
+    background-color: #ffb703;
+    color: #0b2d5c;
+    text-decoration: none;
+    padding: 12px 26px;
+    border-radius: 8px;
+    font-weight: bold;
+    border: 2px solid #ffb703;
+    transition: all 0.3s ease;
+}
+
+.footer-box h3 a:hover {
+    background-color: transparent;
+    color: #ffb703;
+    transform: translateY(-3px);
+}
+
+/* Footer Text */
+
+.footer-box p {
+    margin: 8px 0;
+    color: #dddddd;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* Any normal links inside footer */
+
+.footer-box p a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-box p a:hover {
+    color: #ffb703;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-box,
+    .footer-box:nth-child(2),
+    .footer-box:last-child {
+        text-align: center;
+    }
+
+    .footer-box {
+        width: 100%;
+    }
+
+    .footer-box h3 a {
+        width: 200px;
+    }
+
 }
