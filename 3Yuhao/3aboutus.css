@@ -113,8 +113,8 @@ nav a:hover{
 ========================================== */
 
 .about-us h1 {
-    text-align: center;
-    border-radius: 16px;
+  text-align: center; 
+  border-radius: 16px;
   background: linear-gradient(135deg, #1a1a2e 0%, #000080 100%);
   color: #fff;
   padding: 60px 20px;
@@ -131,21 +131,16 @@ nav a:hover{
   margin: 20px auto 0;
 }
 
+.about-us {
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
 footer p {
   text-align: center;
   margin: 0 auto;
 }
-
-.about-us {
-  max-width: 1400px;
-  margin: 40px auto;
-  padding: 40px;
-  background-color: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  text-align: center;
-}
-
 
 /* ==========================================
    FOOTER

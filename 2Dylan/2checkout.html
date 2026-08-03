@@ -1,180 +1,200 @@
 <!-- Author: Dylan, admin no: 261424B-->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reshoe</title>
-    <link rel="stylesheet" href="2checkout.css">
-</head>
 
-<body>
+    <head>
 
-    <form onsubmit="event.preventDefault();">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reshoe</title>
+        <link rel="stylesheet" href="2checkout.css">
 
-        <div class="checkout-layout">
+    </head>
+
+    <body>
+
+        <form onsubmit="event.preventDefault();">
+
+            <div class="checkout-layout">
             
-            <div>
+                <div>
 
-                <section>
+                    <section>
 
-                    <div class="checkout-header">
+                        <div class="checkout-header">
 
-                     <a href="../1Ethan/1homepage.html" class="back-link">← Back to Home</a>
-
-                    </div>
-
-                </section>
-
-                <section>
-
-                    <div class="product-selector-container">
-
-                     <label for="product-select" class="selector-label">Choose a Product:</label>
-  
-                        <div class="custom-select-wrapper">
-
-                          <select id="product-select" onchange="productSelected(this.value)">
-                          <option value="" disabled selected>-- Select a Product --</option>
-                          <option value="Nike Dart 9">Nike Dart 9 Black Metallic Silver White($199.00)</option>
-                          <option value="Adidas Hoops 3.0 .Low">Adidas Hoops 3.0 .Low White/Black/Grey($169.00)</option>
-                          <option value="On Running Cloud">On Running Cloud Black/White ($249.00)</option>
-                          <option value="Nike Dunk Low Retro">Nike Dunk Low Retro White/Grey ($179.00)</option>
-                          <option value="Adidas Ori Samba">Adidas Original Samba White/Cardboard ($159.00)</option>
-                          <option value="ASICS Gel-1130">ASICS Gel-1130 Sliver/White/Black ($189.00)</option>
-                          <option value="Adidas Grand Court 2.0">Adidas Grand Court 2.0 White/Dark Blue($119.00)</option>
-                          <option value="Nike Dunk Low Retro">Nike Dunk Low Retro Black/White ($169.00)</option>
-                          <option value="Sketchers Hands Free">Sketchers Hands Free Slip Ins ($129.00)</option>
-                          <option value="Adidas Harden Vol.10">Adidas Harden Vol.10 "Pink lemonade" ($229.00)</option>
-                          <option value="Nike Pegasus 42">Nike Pegasus 42 White/Black/Photon Dust($219.00)</option>
-                          <option value="Onisuka Tiger Mexico 66">Onisuka Tiger Mexico 66 ($189.00)</option>
-                           
-                         </select>
+                         <a href="../1Ethan/1homepage.html" class="back-link">← Back to Home</a>
 
                         </div>
+
+                    </section>
+
+                    <section>
+
+                        <div class="product-selector-container">
+
+                         <label for="product-select" class="selector-label">Choose a Product:</label>
+  
+                            <div class="custom-select-wrapper">
+
+                                <select id="product-select" onchange="productSelected(this.value)">
+
+                                    <option value="" disabled selected>-- Select a Product --</option>
+                                    <option value="Nike Dart 9">Nike Dart 9 Black Metallic Silver White($199.00)</option>
+                                    <option value="Adidas Hoops 3.0 .Low">Adidas Hoops 3.0 Low White/Black/Grey($169.00)</option>
+                                    <option value="On Running Cloud">On Running Cloud Black/White ($249.00)</option>
+                                    <option value="Nike Dunk Low Retro">Nike Dunk Low Retro White/Grey ($179.00)</option>
+                                    <option value="Adidas Ori Samba">Adidas Original Samba White/Cardboard ($159.00)</option>
+                                    <option value="ASICS Gel-1130">ASICS Gel-1130 Sliver/White/Black ($189.00)</option>
+                                    <option value="Adidas Grand Court 2.0">Adidas Grand Court 2.0 White/Dark Blue($119.00)</option>
+                                    <option value="Nike Dunk Low Retro">Nike Dunk Low Retro Black/White ($169.00)</option>
+                                    <option value="Sketchers Hands Free">Sketchers Hands Free Slip Ins ($129.00)</option>
+                                    <option value="Adidas Harden Vol.10">Adidas Harden Vol.10 "Pink lemonade" ($229.00)</option>
+                                    <option value="Nike Pegasus 42">Nike Pegasus 42 White/Black/Photon Dust($219.00)</option>
+                                    <option value="Onisuka Tiger Mexico 66">Onisuka Tiger Mexico 66 ($189.00)</option>
+
+                                </select>
+
+                            </div>
 
           
-                        <div id="selection-display" class="hidden-display">
+                            <div id="selection-display" class="hidden-display">
 
-                          You selected: <span id="product-name">None</span>
+                             You selected: <span id="product-name">None</span>
                       
+                            </div>
+
                         </div>
 
-                    </div>
+                    </section>
 
-                </section>
+                    <section>
 
-                <section>
-
-                    <h2>Delivery</h2>
+                     <h2>Delivery</h2>
                     
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" required>
-                    </div>
+                        <div class="form-group">
 
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" required>
-                    </div>
+                         <label for="email">Email</label>
+                         <input type="email" id="email" required>
 
-                    <div class="form-group">
-                        <label for="address">Address</label>
-                        <input type="text" id="address" required>
-                    </div>
+                        </div>
 
-                    <div class="form-group">
-                        <label for="phone">Phone number</label>
-                        <input type="tel" id="phone" required>
-                    </div>
+                        <div class="form-group">
 
-                </section>
+                         <label for="name">Name</label>
+                         <input type="text" id="name" required>
 
-                <section>
+                        </div>
 
-                    <h2>Payment</h2>
+                        <div class="form-group">
 
-                    <div class="form-group">
+                         <label for="address">Address</label>
+                         <input type="text" id="address" required>
 
-                        <label class="radio-label">
-                            <input type="radio" name="payment-method" checked>
-                            Credit
-                            <input type="radio" name="payment-method" checked>
+                        </div>
+
+                        <div class="form-group">
+
+                         <label for="phone">Phone number</label>
+                         <input type="tel" id="phone" required>
+
+                        </div>
+
+                    </section>
+
+                    <section>
+
+                     <h2>Payment</h2>
+
+                        <div class="form-group">
+
+                            <label class="radio-label">
+
+                             <input type="radio" name="payment-method" checked>
+                             Credit
+                             <input type="radio" name="payment-method" checked>
                              Debit
-                        </label>
 
-                    </div>
-
-                    <div class="form-group">
-
-                        <label for="card-name">Name on card</label>
-                        <input type="text" id="card-name" required>
-
-                    </div>
-
-                    <div class="form-group">
-
-                        <label for="card-number">Card number</label>
-                        <input type="text" id="card-number" placeholder="0000 0000 0000 0000" required>
-
-                    </div>
-
-                    <div class="form-row">
-
-                        <div class="form-group">
-
-                            <label for="card-expiry">MM/YY</label>
-                            <input type="text" id="card-expiry" placeholder="MM/YY" required>
+                            </label>
 
                         </div>
 
                         <div class="form-group">
 
-                            <label for="card-cvc">Security code</label>
-                            <input type="text" id="card-cvc" placeholder="CVC" required>
+                         <label for="card-name">Name on card</label>
+                         <input type="text" id="card-name" required>
 
                         </div>
 
-                        <button type="submit" class="btn-submit">
+                        <div class="form-group">
 
-                            <a href="../5Jayden/5tqfororder.html">Place Order</a>
+                         <label for="card-number">Card number</label>
+                         <input type="text" id="card-number" placeholder="0000 0000 0000 0000" required>
+
+                        </div>
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                             <label for="card-expiry">MM/YY</label>
+                             <input type="text" id="card-expiry" placeholder="MM/YY" required>
+
+                            </div>
+
+                            <div class="form-group">
+
+                             <label for="card-cvc">Security code</label>
+                             <input type="text" id="card-cvc" placeholder="CVC" required>
+
+                            </div>
+
+                            <button type="submit" class="btn-submit">
+
+                             <a href="../5Jayden/5tqfororder.html">Place Order</a>
                             
-                        </button>
+                            </button>
 
-                    </div>
+                        </div>
 
-                </section>
+                    </section>
+
+                </div>
+
+            </div>
+
+        </form>
+
+    </body>
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-box">
+
+             <h3><a href="../3Yuhao/3aboutus.html">About Us</a></h3>
+             <p>Learn more about ReShoe and our mission.</p>
+
+            </div>
+
+            <div class="footer-box">
+
+             <h3>ReShoe</h3>
+             <p>&copy; 2026 ReShoe</p>
+             <p>Affordable Sneakers for Everyone</p>
+
+            </div>
+
+            <div class="footer-box">
+
+             <h3><a href="../4Junwei/4contactus.html">Contact Us</a></h3>
+             <p>info@reshoe.com</p>
 
             </div>
 
         </div>
 
-    </form>
-
-</body>
-
- <footer>
-
-    <div class="footer-container">
-
-        <div class="footer-box">
-            <h3><a href="../3Yuhao/3aboutus.html">About Us</a></h3>
-            <p>Learn more about ReShoe and our mission.</p>
-        </div>
-
-        <div class="footer-box">
-            <h3>ReShoe</h3>
-            <p>&copy; 2026 ReShoe</p>
-            <p>Affordable Sneakers for Everyone</p>
-        </div>
-
-        <div class="footer-box">
-            <h3><a href="../4Junwei/4contactus.html">Contact Us</a></h3>
-            <p>info@reshoe.com</p>
-        </div>
-
-    </div>
-
-  </footer>
+    </footer>
 
 </html>

@@ -112,8 +112,8 @@ nav a:hover{
    NAVIGATION BAR END
 ========================================== */
 .brands h1 {
-    text-align: center;
-    border-radius: 16px;
+  text-align: center; 
+  border-radius: 16px;
   background: linear-gradient(135deg, #1a1a2e 0%, #000080 100%);
   color: #fff;
   padding: 60px 20px;
@@ -130,20 +130,20 @@ nav a:hover{
   margin: 20px auto 0;
 }
 
-
 .brand-section {
-  max-width: 1200px;
-  margin: 0 auto 60px;
-  padding: 0 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .brand-title {
   font-size: 2rem;
   color: #1a1a2e;
-  margin-bottom: 24px;
+  margin-bottom: 15px;
   border-bottom: 3px solid #000080;
   display: inline-block;
-  padding-bottom: 8px;
+  padding-top: 20px;
+  padding-bottom: 5px;
 }
 
 .product-grid {

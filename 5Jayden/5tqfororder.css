@@ -7,6 +7,17 @@ body {
     text-align: center;
     margin: 0 auto;
 }
+/*logo styles */
+.logo {
+    width: 150px;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+}
+
+
+
+/* Order Details Table Styles */
 .order-details {
     width: 30%;
     margin: 30px auto;
@@ -22,6 +33,12 @@ body {
 
 .order-details th {
     text-align: center;
+}
+.order-details th {
+    height: 500px;
+    text-align: center;
+    vertical-align: top;
+    padding-top: 20px;
 }
 
 /* Footer Styles */
@@ -127,4 +144,16 @@ footer {
         width: 200px;
     }
 
+}
+/* Home Button Styles */
+.home-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
 }
