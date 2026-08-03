@@ -34,33 +34,66 @@
                     <!--Select product section-->
                     <section>
                        
-                        <div class="product-selector-container">
+                        <div class="product-selector-container">                       
+                             
+                            <div class="select-form-row">
 
-                         <label for="product-select" class="selector-label">Choose a Product:</label>
-  
-                            <div class="custom-select-wrapper">
+                                 <div class="select-form-group">
 
-                                <select id="product-select" name="product">
+                                 <label for="product-select" class="selector-label">Choose a Product:</label>
 
-                                    <option value="" disabled selected>-- Select a Product --</option>
-                                    <option value="Nike Dart 9">Nike Dart 9 Black Metallic Silver White($199.00)</option>
-                                    <option value="Adidas Hoops 3.0 .Low">Adidas Hoops 3.0 Low White/Black/Grey($169.00)</option>
-                                    <option value="On Running Cloud">On Running Cloud Black/White ($249.00)</option>
-                                    <option value="Nike Dunk Low Retro">Nike Dunk Low Retro White/Grey ($179.00)</option>
-                                    <option value="Adidas Ori Samba">Adidas Original Samba White/Cardboard ($159.00)</option>
-                                    <option value="ASICS Gel-1130">ASICS Gel-1130 Sliver/White/Black ($189.00)</option>
-                                    <option value="Adidas Grand Court 2.0">Adidas Grand Court 2.0 White/Dark Blue($119.00)</option>
-                                    <option value="Nike Dunk Low Retro">Nike Dunk Low Retro Black/White ($169.00)</option>
-                                    <option value="Sketchers Hands Free">Sketchers Hands Free Slip Ins ($129.00)</option>
-                                    <option value="Adidas Harden Vol.10">Adidas Harden Vol.10 "Pink lemonade" ($229.00)</option>
-                                    <option value="Nike Pegasus 42">Nike Pegasus 42 White/Black/Photon Dust($219.00)</option>
-                                    <option value="Onisuka Tiger Mexico 66">Onisuka Tiger Mexico 66 ($189.00)</option>
+                                    <div class="custom-select-wrapper">
 
-                                </select>
+                                        <select id="product-select" name="product">
+
+                                         <option value="" disabled selected>-- Select a Product --</option>
+                                         <option value="Nike Dart 9">Nike Dart 9 Black Metallic Silver White ($199.00)</option>
+                                         <option value="Adidas Hoops 3.0 .Low">Adidas Hoops 3.0 Low White/Black/Grey ($169.00)</option>
+                                         <option value="On Running Cloud">On Running Cloud Black/White ($249.00)</option>
+                                         <option value="Nike Dunk Low Retro">Nike Dunk Low Retro White/Grey ($179.00)</option>
+                                         <option value="Adidas Ori Samba">Adidas Original Samba White/Cardboard ($159.00)</option>
+                                         <option value="ASICS Gel-1130">ASICS Gel-1130 Sliver/White/Black ($189.00)</option>
+                                         <option value="Adidas Grand Court 2.0">Adidas Grand Court 2.0 White/Dark Blue ($119.00)</option>
+                                         <option value="Nike Dunk Low Retro">Nike Dunk Low Retro Black/White ($169.00)</option>
+                                         <option value="Sketchers Hands Free">Sketchers Hands Free Slip Ins ($129.00)</option>
+                                         <option value="Adidas Harden Vol.10">Adidas Harden Vol.10 "Pink lemonade" ($229.00)</option>
+                                         <option value="Nike Pegasus 42">Nike Pegasus 42 White/Black/Photon Dust ($219.00)</option>
+                                         <option value="Onisuka Tiger Mexico 66">Onisuka Tiger Mexico 66 ($189.00)</option>
+
+                                        </select>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="select-form-group">
+
+                                 <label for="product-select" class="selector-label">Choose a Size:</label>
+
+                                    <div class="custom-select-wrapper">
+
+                                         <select id="product-select" name="product">
+
+                                         <option value="" disabled selected>-- Choose a Size --</option>
+                                         <option value="US 7">US 7</option>
+                                         <option value="US 7.5">US 7.5</option>
+                                         <option value="US 8">US 8</option>
+                                         <option value="US 8.5">US 8.5</option>
+                                         <option value="US 9">US 9</option>
+                                         <option value="US 9.5">US 9.5</option>
+                                         <option value="US 10">US 10</option>
+                                         <option value="US 10.5">US 10.5</option>
+                                         <option value="US 11">US 11</option>
+                                         <option value="US 11.5">US 11.5</option>
+                                         
+                                        </select>
+
+                                    </div>
+
+                                </div>
 
                             </div>
 
-          
                             <div id="selection-display" class="hidden-display">
 
                              You selected: <span id="product-name">None</span>
@@ -150,7 +183,7 @@
                             <div class="form-group">
 
                              <label for="card-cvc">Security code</label>
-                             <input type="text" id="card-cvc placeholder="CVC" required>
+                             <input type="text" id="card-cvc" placeholder="CVC" required>
 
                             </div>
 
@@ -173,7 +206,7 @@
     </body>
 
     <!--footer-->
-    <footer class="last">
+    <footer>
     
         <div class="footer-container">
 
