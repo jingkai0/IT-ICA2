@@ -238,7 +238,8 @@ footer {
     background-color: #0b2d5c;
     color: white;
     padding: 50px 20px;
-    margin-top: 70px;
+    margin-top: 80px;
+    margin: -8px;
 }
 
 .footer-container {

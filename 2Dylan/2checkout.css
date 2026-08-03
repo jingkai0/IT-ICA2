@@ -22,24 +22,13 @@ body {
 /* Background image */
 body {
     /* Set the path to your image file */
-    background-image: 
-
-    /* Prevent the image from tiling/repeating */
+    background-image: url('../Images/checkoutbackground.png');
     background-repeat: no-repeat;
-
-    /* Stretch the photo to cover the whole screen */
     background-size: cover;
-
-    /* Center the image horizontally and vertically */
     background-position: center;
-
-    /* Keep the background fixed while scrolling */
     background-attachment: fixed;
-
-    /* Fallback color if the image fails to load */
     background-color: #333333;
 }
-
 
 /* Responsive Main Layout Split */
 .checkout-layout {
@@ -193,6 +182,7 @@ input:focus {
     display: block;
     width: 200%;
     padding: 15px;
+    margin-top: -20px;
     background-color: black;
     color: white;
     border: none;
@@ -220,14 +210,16 @@ footer {
     color: white;
     padding: 50px 20px;
     margin-top: 70px;
+    margin: -20px;
 }
 
 .footer-container {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     gap: 40px;
 }
