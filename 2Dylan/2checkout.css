@@ -39,13 +39,13 @@ body {
 }
 
 .back-link {
-    color: #333;
+    color: black;
     text-decoration: none;
     font-weight: 500;
 }
 
 .back-link:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* left column */
@@ -59,7 +59,7 @@ section {
   display: block;
   margin-bottom: 8px;
   font-weight: 600;
-  color: #333333;
+  color: black;
 }
 
 .custom-select-wrapper {
@@ -71,11 +71,10 @@ section {
   width: 100%;
   padding: 12px 16px;
   font-size: 16px;
-  color: #333333;
+  color: #333;
   background-color: #f8f9fa;
-  border: 2px solid #e0e0e0;
+  border: 2px solid #333;
   border-radius: 6px;
-  cursor: pointer;
   appearance: none; 
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -94,7 +93,7 @@ section {
   right: 15px;
   top: 50%;
   transform: translateY(-50%);
-  color: #888888;
+  color: #333;
   pointer-events: none;
 }
 
