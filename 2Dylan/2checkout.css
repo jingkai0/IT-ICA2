@@ -189,26 +189,28 @@ input:focus {
     border-color: #333;
 }
 
-/* PLace order button */
+/* Place order button */
 .btn-submit {
+    color: black;
     display: block;
     width: 200%;
     padding: 15px;
-    background-color: black;
-    color: white;
-    border: none;
+    border: 2px solid #333;
     border-radius: 30px;
-    font-size: 1.1rem;
+    font-size: 20px;
     font-weight: bold;
+    background-color: white;
+    transition: background 0.2s;
 }
 
 .btn-submit:hover {
-    background-color: #333;
+    background: #333;
+    color: #fff
 }
 
 .btn-submit a {
-    color: white;
     text-decoration: none;
+    color: inherit;
     display: block;
 }
 
