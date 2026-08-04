@@ -27,20 +27,21 @@ body {
 }
 
 .container{
-    width:80%;
+    width:100%;
     max-width:1100px;
     margin:auto;
     background:white;
     padding:40px;
-    transparent;
-    transform:translateY(10%);
+    margin:80px auto 40px auto;
+    
 }
+
 .black-arrow {
     color:black;
     text-decoration:none;
     font-size:22px;
     font-weight:bold;
-    left:30px;
+    left:3px;
     top:30px;
     position:fixed;
     
@@ -97,7 +98,7 @@ body {
     font-weight: bold;
     color: #333;
     margin-left: 10px;
-    transform:translateX(-350px)
+    
 }
 
 .p{
