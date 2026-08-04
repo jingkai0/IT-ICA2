@@ -112,28 +112,41 @@ nav a:hover{
    NAVIGATION BAR END
 ========================================== */
 .about-us {
-  max-width: 1400px;
-  margin: 0 auto;
-  text-align: center;
+    max-width: 1400px;
+    margin: 20px auto 0;
+    text-align: center;
 }
 
-.about-us h1 {
-  text-align: center; 
-  border-radius: 16px;
-  background: linear-gradient(135deg, #1a1a2e 0%, #000080 100%);
-  color: #fff;
-  padding: 60px 20px;
-  letter-spacing: 6px;
-  position: relative;
+.about-header {
+    padding: 60px 20px 40px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #1a1a2e 0%, #000080 100%);
+    color: white;
 }
 
-.about-us h1::after {
-  content: '';
-  display: block;
-  width: 90px;
-  height: 5px;
-  background: #FFFDD0;
-  margin: 20px auto 0;
+.about-header h1 {
+    margin: 0;
+    padding: 0;
+    background: none;
+    color: white;
+    letter-spacing: 6px;
+}
+
+.about-header h1::after {
+    content: '';
+    display: block;
+    width: 90px;
+    height: 5px;
+    background: #FFFDD0;
+    margin: 20px auto;
+}
+
+.about-header p {
+    max-width: 650px;
+    margin: 0 auto;
+    color: white;
+    font-size: 18px;
+    line-height: 1.6;
 }
 
 .about-us h2 {
