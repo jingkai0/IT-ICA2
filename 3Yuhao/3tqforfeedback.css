@@ -33,7 +33,7 @@ body {
   color: #000080;
 }
 
-
+/*footer*/
 
  footer {
   background-color: #0b2d5c;
@@ -146,6 +146,10 @@ footer {
     }
 
 }
+
+
+
+
 
 html, body {
   height: 100%;
