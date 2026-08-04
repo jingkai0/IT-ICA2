@@ -131,6 +131,7 @@ img {
     font-weight: 700;
     text-align: center;
     text-decoration: underline;
+    margin-top: 60px;
 }
 
 .recommendations-grid {
@@ -143,6 +144,9 @@ img {
 
 /* Product section */
 .shoe-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     background: #ffffff;
     border-radius: 8px;
     padding: 25px;
@@ -157,33 +161,30 @@ img {
 }
 
 /* Product image */
-
 .shoe-image {
-    max-width: 100%;
-    height: auto;
+    width: 220px;
+    height: 150px;
     object-fit: contain;
-    margin-left: -20px;
-    padding: auto;
+    padding: 10px;
 }
 
 /* Product name */
 .shoe-name {
-    margin: 20px;
     padding: 20px;
-    padding-top: 50px;
-
+    margin-bottom: -20px;
 }
 
 /* View product btn */
 .shoe-btn {
+    color: black;
     border: 2px solid #333;
     border-radius: 8px;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bold;
     background-color: transparent;
     transition: background 0.2s;
     padding: 15px;
-    text-decoration: none;
+    text-decoration:none;
 }
 
 .shoe-btn:hover {
