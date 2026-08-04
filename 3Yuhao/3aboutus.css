@@ -160,6 +160,31 @@ nav a:hover{
   font-size: 20px;
 }
 
+/* Memebers table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #A3C3F3;
+    font-size: large;
+}
+
+th, td {
+    border: 3px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    border-color: black;
+}
+
+td {
+    font-weight: 400;
+}
+
+th {
+    background-color: #D5E3F8;
+}
+
+
 /* ==========================================
    FOOTER
 ========================================== */
