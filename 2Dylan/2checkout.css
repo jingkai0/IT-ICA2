@@ -79,7 +79,6 @@ section {
     gap: 15px;
 }
 
-
 .selector-label {
   display: block;
   margin-bottom: 8px;
@@ -248,7 +247,6 @@ footer {
 }
 
 /* Footer Headings */
-
 .footer-box h3 {
     margin-bottom: 20px;
     font-size: 1.3rem;
@@ -256,7 +254,6 @@ footer {
 }
 
 /* Button Style */
-
 .footer-box h3 a {
     display: inline-block;
     background-color: #ffb703;
@@ -276,7 +273,6 @@ footer {
 }
 
 /* Footer Text */
-
 .footer-box p {
     margin: 8px 0;
     color: #dddddd;
@@ -285,7 +281,6 @@ footer {
 }
 
 /* Any normal links inside footer */
-
 .footer-box p a {
     color: white;
     text-decoration: none;
@@ -297,7 +292,6 @@ footer {
 }
 
 /* Responsive */
-
 @media (max-width: 768px) {
 
     .footer-container {
@@ -319,5 +313,5 @@ footer {
     .footer-box h3 a {
         width: 200px;
     }
-
+    
 }
