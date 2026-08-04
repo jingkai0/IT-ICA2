@@ -4,30 +4,21 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-/* ==========================================
-   NAVIGATION BAR START
-========================================== */
-
+/* Header */
 header{
     width:100%;
     background:white;
     border-bottom:1px solid #ccc;
 }
 
-/* ==========================================
-   HEADER
-========================================== */
-
-header{
-    width:100%;
-    background:white;
-    border-bottom:1px solid #ccc;
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  background-color: #fff;
 }
 
-/* ==========================================
-   TOP BAR
-========================================== */
-
+/* Top bar */
 .top-bar{
     display:flex;
     align-items:center;
@@ -65,7 +56,7 @@ header{
     background:#f2f2f2;
 }
 
-
+/* Nav bar */
 nav{
     width:100%;
     border-top:1px solid #ddd;
@@ -102,15 +93,7 @@ nav a:hover{
     background:#f2f2f2;
 }
 
-.site-header {
-  position: sticky;
-  top: 0;
-  z-index: 9999;
-  background-color: #fff;
-}
-
-
-/* Main Layout */
+/* Main layout */
 .main-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -138,29 +121,77 @@ img {
     object-fit: contain;
     padding: 20px;
     margin-top: -15px;
+    margin-bottom: -68px;
     display: block;
 }
 
-.btn-checkout {
+/* Recommendations section */
+.recommendations-title {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.recommendations-grid {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 30px;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+/* Product section */
+.shoe-card {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 25px;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 1px solid #eaeaea;
+}
+
+.shoe-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Product image */
+
+.shoe-image {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin-left: -20px;
+    padding: auto;
+}
+
+/* Product name */
+.shoe-name {
+    margin: 20px;
+    padding: 20px;
+    padding-top: 50px;
+
+}
+
+/* View product btn */
+.shoe-btn {
     border: 2px solid #333;
     border-radius: 8px;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
     background-color: transparent;
     transition: background 0.2s;
-    padding: 20px;
-    margin-top: -10px;
-    margin-bottom: 70px;
-    margin-left: 20px;
-    margin-right: 35px;
+    padding: 15px;
+    text-decoration: none;
 }
 
-.btn-checkout:hover {
+.shoe-btn:hover {
     background: #333;
     color: #fff;
 }
 
-.btn-checkout a {
+.shoe-btn a {
     text-decoration: none;
     color: inherit;
     display: block;
@@ -173,6 +204,7 @@ img {
     gap: 10px;
 }
 
+/* Product info */
 .product-name {
     font-size: 28px;
     padding: 10px;
@@ -206,35 +238,33 @@ img {
     margin-top: -6px;
 }
 
-.size-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+/* Checkout section */
+.btn-checkout {
     border: 2px solid #333;
     border-radius: 8px;
-    overflow: hidden;
-    background: #333;
-    gap: 2px;
-    margin: 10px;
-}
-
-.size-btn {
-    background: #fff;
-    border: none;
-    padding: 20px;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
+    background-color: transparent;
     transition: background 0.2s;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 70px;
+    margin-left: 20px;
+    margin-right: 35px;
 }
 
-.size-btn:hover {
-    background: #f0f0f0;
+.btn-checkout:hover {
+    background: #333;
+    color: #fff;
 }
 
+.btn-checkout a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
 
-/* ==========================================
-   FOOTER
-========================================== */
-
+/* Footer */
 footer {
     background-color: #0b2d5c;
     color: white;
