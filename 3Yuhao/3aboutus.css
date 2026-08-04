@@ -136,10 +136,15 @@ nav a:hover{
   margin: 20px auto 0;
 }
 
+.about-us h2 {
+    text-decoration: underline;
+}
 
-footer p {
+.about-us p {
   text-align: center;
   margin: 0 auto;
+  font-weight: 4px;
+  font-size: 20px;
 }
 
 /* ==========================================
