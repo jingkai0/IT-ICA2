@@ -166,17 +166,20 @@ nav a:hover{
 .contact-card2 {
     background: lightcoral;
 }
- .contact-card img,
+
+.contact-card img,
 .contact-card1 img,
 .contact-card2 img {
     width: 100%;
     border-radius: 8px;
 }
+
 .contact-map {
     width: 1400px;
     margin: 30px auto;
     border-radius: 10px;
     overflow: hidden;
+    text-align: center;
 }
 
 .contact-map iframe {
@@ -188,7 +191,6 @@ nav a:hover{
 h1{
     font-family: Helvetica, ;
 }
-p{text-align: center;}
 
 h2 {
     font-size: 20px;
@@ -230,6 +232,7 @@ h2 {
 .store-image {
     width: 900px;
     margin: 30px auto;
+    text-align: center;
 }
 
 .store-image img {
@@ -242,14 +245,14 @@ h2 {
    FOOTER
 ========================================== */
 
-.last footer {
+footer {
     background-color: #0b2d5c;
     color: white;
     padding: 50px 20px;
     margin-top: 70px;
 }
 
-.last .footer-container {
+.footer-container {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -259,22 +262,22 @@ h2 {
     gap: 40px;
 }
 
-.last .footer-box {
+.footer-box {
     flex: 1;
     min-width: 220px;
 }
 
-.last .footer-box:nth-child(2) {
+.footer-box:nth-child(2) {
     text-align: center;
 }
 
-.last .footer-box:last-child {
+.footer-box:last-child {
     text-align: right;
 }
 
 /* Footer Headings */
 
-.last.footer-box h3 {
+.footer-box h3 {
     margin-bottom: 20px;
     font-size: 1.3rem;
     font-weight: bold;
