@@ -15,8 +15,6 @@ body {
     display: block;
 }
 
-
-
 /* Order Details Table Styles */
 .order-details {
     width: 30%;
@@ -31,14 +29,14 @@ body {
     padding: 15px;
 }
 
+
 .order-details th {
-    text-align: center;
-}
-.order-details th {
-    height: 500px;
+    height: 400px;
     text-align: center;
     vertical-align: top;
     padding-top: 20px;
+    font-size: 25px;
+    text-decoration: underline;
 }
 
 /* Footer Styles */
@@ -146,14 +144,25 @@ footer {
 
 }
 /* Home Button Styles */
-.home-button {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    text-decoration: none;
-    background-color: black;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
+.back-to-home {
+    font-size: 100px;
+    padding-bottom: 15px;
+    margin-bottom: -20px;
 }
+.display {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    color:black;
+    text-decoration: none;
+    font-size: 20px;
+}
+.display {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.display:hover {
+  text-decoration: underline;
 }
