@@ -187,3 +187,21 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+/*feedback message style*/
+.thanks {
+  font-size: 35px;
+  color: #0b2d5c;
+  margin-bottom: 20px;
+}
+.thanks-for-feedback {
+margin-top:50px
+}
+.feedback-message {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.shop-message {
+  font-size: 25px;
+  font-weight: bold;
+  color: #09115a;
+}
