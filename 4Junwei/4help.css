@@ -44,18 +44,17 @@ body {
 
 .help {
   max-width: 1400px;
-  margin: 0 auto;
+  margin: 40px auto 0;
+  padding: 60px 20px;
   text-align: center;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #1a1a2e 0%, #000080 100%);
+  color: white;
 }
 
 .help h1 {
-  text-align: center; 
-  border-radius: 16px;
-  background: linear-gradient(135deg, #1a1a2e 0%, #000080 100%);
-  color: #fff;
-  padding: 60px 20px;
+  margin-top: 0;
   letter-spacing: 6px;
-  position: relative;
 }
 
 .help h1::after {
@@ -63,9 +62,15 @@ body {
   display: block;
   width: 90px;
   height: 5px;
-  background: #FFFDD0;
-  margin: 20px auto 0;
+  background: #fffdd0;
+  margin: 20px auto;
 }
+
+.help p {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}   
 
 .faqs-section {
     display: flex;
