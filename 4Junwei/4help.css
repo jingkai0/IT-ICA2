@@ -44,12 +44,13 @@ body {
 }
 
 .help {
-  max-width: none;
-  margin: 40px 50px 0;
-  padding: 60px 20px;
-  box-sizing: border-box;
-
+  max-width: 1400px;
+  margin: 0 auto;
   text-align: center;
+}
+
+.help h1 {
+  text-align: center; 
   border-radius: 16px;
   background: linear-gradient(135deg, #1a1a2e 0%, #000080 100%);
   color: white;
@@ -75,12 +76,19 @@ body {
   line-height: 1.6;
 }   
 
-.faqs-section {
+.faqs-section-container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     margin-top: 20px;
+    
 }
+<<<<<<< HEAD
+.faqs-column {
+    margin-top: -15px;
+    margin-bottom: -5px;
+    
+=======
 
 .faqs-card  {
    font-size: 15px;
@@ -88,11 +96,22 @@ body {
     width: 30%;
     margin-top: 20px;
     line-height: 1.25; 
+>>>>>>> 7a0f072b975ff8ff1c77de91076e62681827fe57
     
 }
 
+.faqs-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    
+}
+
+
 .resources-card {
     width:65%;
+    padding : 40px;
+    
     
 }
 .faq-item summary{
@@ -101,15 +120,23 @@ body {
     font-weight:bold;
     list-style:none;
     display:flex;
-    justify-content:space-between;
-    align-items:center;
+    justify-content:relative;
+    
 }
 .faq-item summary::after{
     content: '+';
     font-size: 24px;
     font-weight: bold;
     color: #333;
-    margin-left: 10px;
+    margin-left:10px
+    
+}
+.size-chart-section {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
     
 }
 
