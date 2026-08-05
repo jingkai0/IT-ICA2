@@ -83,12 +83,6 @@ body {
     margin-top: 20px;
     
 }
-<<<<<<< HEAD
-.faqs-column {
-    margin-top: -15px;
-    margin-bottom: -5px;
-    
-=======
 
 .faqs-card  {
    font-size: 15px;
@@ -96,8 +90,6 @@ body {
     width: 30%;
     margin-top: 20px;
     line-height: 1.25; 
->>>>>>> 7a0f072b975ff8ff1c77de91076e62681827fe57
-    
 }
 
 .faqs-row {
