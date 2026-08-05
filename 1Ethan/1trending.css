@@ -405,70 +405,28 @@ footer{
 
 /* RESPONSIVE DESIGN */
 
-/* Tablets */
+/* mobile */
 
-@media (max-width:900px){
+@media (max-width: 768px) {
 
-    .products{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-    .top-bar{
-        flex-direction:column;
-        gap:20px;
-    }
-
-    .search-bar{
-        width:100%;
-    }
-
-    .footer-container{
-        flex-direction:column;
-        text-align:center;
-        align-items:center;
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
     .footer-box,
     .footer-box:nth-child(2),
-    .footer-box:last-child{
-        text-align:center;
-        width:100%;
+    .footer-box:last-child {
+        text-align: center;
     }
 
-}
-
-/* Mobile */
-
-@media (max-width:600px){
-
-    nav ul{
-        flex-direction:column;
+    .footer-box {
+        width: 100%;
     }
 
-    nav li{
-        border-right:none;
-        border-bottom:1px solid #ddd;
-    }
-
-    .products{
-        grid-template-columns:1fr;
-    }
-
-    .page-title h1{
-        font-size:32px;
-    }
-
-    .featured-heading h2{
-        font-size:28px;
-    }
-
-    .slide{
-        width:220px;
-    }
-
-    .slide img{
-        width:180px;
-        height:180px;
+    .footer-box h3 a {
+        width: 200px;
     }
 
 }
