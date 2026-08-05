@@ -7,36 +7,46 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>REShoe - Feedback Form </title>
         <link rel="stylesheet" href="3feedbackform.css">
-        <a href="../1Ethan/1homepage.html" class="back-link">← Back to Homepage</a>
         
     </head>
 
     <body>
 
-     <h2>💬 Feedback Form</h2>
-     <p>
-        We value your feedback! Please use the feedback form below to share your thoughts, suggestions, 
-        or any issues you may have encountered. Your input helps us improve our products and services.
-     </p>
-         
+        <div class="back-header">
+
+         <a href="../1Ethan/1homepage.html" class="back-link">← Back to Home</a>
+
+        </div>
+
+        <div class="feedback-header">
+
+         <h2>💬 Feedback Form</h2>
+         <p>
+          We value your feedback! Please use the feedback form below to share your thoughts, suggestions, 
+          or any issues you may have encountered. Your input helps us improve our products and services.
+         </p>
+
+        </div>
+ 
         <div class="resources-card">
 
             <form action="3tqforfeedback.html" method="get">
 
                 <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name" required><br><br>
+                <input type="text" id="name" name="name" placeholder="John Tan" required><br><br>
 
                 <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required><br><br>
-
-                <label for="address">Address:</label><br>
-                <input type="text" id="address" name="address" required><br><br>
+                <input type="email" id="email" name="email" placeholder="johntan@gmail.com" required><br><br>
 
                 <label for="resource">Feedback:</label><br>
-                <textarea id="resource" name="resource" rows="4" cols="50" required></textarea><br><br>
+                <textarea id="resource" name="resource" rows="10" cols="50" required></textarea><br><br>
+                 
+                <div class="bottom-btn">
 
-                <input type="submit" value="Submit">
-                <input type="reset" value="Clear Form">
+                    <button type="submit" class="btn-submit">Submit</button>
+                    <button type="reset" class="btn-submit">Clear Form</button>
+                    
+                </div>
 
             </form>
 

@@ -124,6 +124,10 @@ nav a:hover{
     color: white;
 }
 
+.about-header span {
+    font-size: large;
+}
+
 .about-header h1 {
     margin: 0;
     padding: 0;

@@ -22,7 +22,6 @@ body {
 
 /* Background image */
 body {
-    /* Set the path to your image file */
     background-image: url('../Images/checkoutbackground.png');
     background-repeat: no-repeat;
     background-size: cover;
