@@ -26,14 +26,14 @@ body {
     padding: 15px;
 }
 
-.order-details th {
-    text-align: center;
-}
+
 .order-details th {
     height: 400px;
     text-align: center;
     vertical-align: top;
     padding-top: 20px;
+    font-size: 25px;
+    text-decoration: underline;
 }
 
 /* Footer Styles */
