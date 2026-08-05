@@ -12,6 +12,7 @@ body {
     font-size: 18px;
     padding-bottom: 15px;
     margin-bottom: -20px;
+    padding: 20px;
 }
 
 .back-link {
@@ -80,6 +81,7 @@ body {
     align-items: flex-start;
     margin-top: 20px;
 }
+
 .faqs-card  {
    font-size: 15px;
     text-align: left;
