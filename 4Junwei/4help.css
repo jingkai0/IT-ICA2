@@ -43,38 +43,38 @@ body {
     
 }
 
-.help {
-  max-width: 1400px;
-  margin: 0 auto;
-  text-align: center;
+.help{
+    max-width:1400px;
+    margin:20px auto;
+    padding:60px 20px;
+    text-align:center;
+    border-radius:16px;
+    background:linear-gradient(135deg, #1a1a2e 0%, #000080 100%);
 }
 
-.help h1 {
-  text-align: center; 
-  border-radius: 16px;
-  background: linear-gradient(135deg, #1a1a2e 0%, #000080 100%);
-  color: white;
+.help h1{
+    margin:0;
+    color:white;
+    letter-spacing:6px;
 }
 
-.help h1 {
-  margin-top: 0;
-  letter-spacing: 6px;
+.help h1::after{
+    content:'';
+    display:block;
+    width:90px;
+    height:5px;
+    background:#FFFDD0;
+    margin:20px auto;
 }
 
-.help h1::after {
-  content: '';
-  display: block;
-  width: 90px;
-  height: 5px;
-  background: #fffdd0;
-  margin: 20px auto;
+.help p{
+    max-width:650px;
+    margin:0 auto;
+    color:white;
+    font-size:18px;
+    line-height:1.6;
 }
 
-.help p {
-  max-width: 800px;
-  margin: 0 auto;
-  line-height: 1.6;
-}   
 
 .faqs-section-container {
     display: flex;
