@@ -1,27 +1,24 @@
-/* ==========================================
-   NAVIGATION BAR START
-========================================== */
+/* Author: Dylan, admin no: 261424B */
+/* Base font */
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 
+/* Header */
 header{
     width:100%;
     background:white;
     border-bottom:1px solid #ccc;
 }
 
-/* ==========================================
-   HEADER
-========================================== */
-
-header{
-    width:100%;
-    background:white;
-    border-bottom:1px solid #ccc;
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  background-color: #fff;
 }
 
-/* ==========================================
-   TOP BAR
-========================================== */
-
+/* Top bar */
 .top-bar{
     display:flex;
     align-items:center;
@@ -59,7 +56,7 @@ header{
     background:#f2f2f2;
 }
 
-
+/* Nav bar */
 nav{
     width:100%;
     border-top:1px solid #ddd;
@@ -96,37 +93,19 @@ nav a:hover{
     background:#f2f2f2;
 }
 
-.site-header {
-  position: sticky;
-  top: 0;
-  z-index: 9999;
-  background-color: #fff;
-}
-
-
-/* Main Layout */
+/* Main layout */
 .main-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
     flex-grow: 1;
     margin-bottom: 20px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 @media (max-width: 768px) {
     .main-container {
         grid-template-columns: 1fr;
     }
-}
-
-img {
-    width: 550px;
-    height: 500px;
-    object-fit: contain;
-    padding: 20px;
-    margin-top: -15px;
-    display: block;
 }
 
 /* Left Column */
@@ -136,25 +115,84 @@ img {
     gap: 1px;
 }
 
-.btn-checkout {
+img {
+    width: 550px;
+    height: 500px;
+    object-fit: contain;
+    padding: 20px;
+    margin-top: -15px;
+    margin-bottom: -68px;
+    display: block;
+}
+
+/* Recommendations section */
+.recommendations-title {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 60px;
+}
+
+.recommendations-grid {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 30px;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+/* Product section */
+.shoe-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 25px;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 1px solid #eaeaea;
+}
+
+.shoe-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Product image */
+.shoe-image {
+    width: 220px;
+    height: 150px;
+    object-fit: contain;
+    padding: 10px;
+}
+
+/* Product name */
+.shoe-name {
+    padding: 20px;
+    margin-bottom: -20px;
+}
+
+/* View product btn */
+.shoe-btn {
+    color: black;
     border: 2px solid #333;
     border-radius: 8px;
     font-size: 20px;
     font-weight: bold;
     background-color: transparent;
     transition: background 0.2s;
-    padding: 20px;
-    margin-top: 52px;
-    margin-left: 20px;
-    margin-right: 35px;
+    padding: 15px;
+    text-decoration:none;
 }
 
-.btn-checkout:hover {
+.shoe-btn:hover {
     background: #333;
     color: #fff;
 }
 
-.btn-checkout a {
+.shoe-btn a {
     text-decoration: none;
     color: inherit;
     display: block;
@@ -167,6 +205,7 @@ img {
     gap: 10px;
 }
 
+/* Product info */
 .product-name {
     font-size: 28px;
     padding: 10px;
@@ -200,40 +239,39 @@ img {
     margin-top: -6px;
 }
 
-.size-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+/* Checkout section */
+.btn-checkout {
     border: 2px solid #333;
     border-radius: 8px;
-    overflow: hidden;
-    background: #333;
-    gap: 2px;
-    margin: 10px;
-}
-
-.size-btn {
-    background: #fff;
-    border: none;
-    padding: 20px;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
+    background-color: transparent;
     transition: background 0.2s;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 70px;
+    margin-left: 20px;
+    margin-right: 35px;
 }
 
-.size-btn:hover {
-    background: #f0f0f0;
+.btn-checkout:hover {
+    background: #333;
+    color: #fff;
 }
 
+.btn-checkout a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
 
-/* ==========================================
-   FOOTER
-========================================== */
-
+/* Footer */
 footer {
     background-color: #0b2d5c;
     color: white;
     padding: 50px 20px;
-    margin-top: 70px;
+    margin-top: 80px;
+    margin: -8px;
 }
 
 .footer-container {
@@ -260,7 +298,6 @@ footer {
 }
 
 /* Footer Headings */
-
 .footer-box h3 {
     margin-bottom: 20px;
     font-size: 1.3rem;
@@ -268,7 +305,6 @@ footer {
 }
 
 /* Button Style */
-
 .footer-box h3 a {
     display: inline-block;
     background-color: #ffb703;
@@ -288,7 +324,6 @@ footer {
 }
 
 /* Footer Text */
-
 .footer-box p {
     margin: 8px 0;
     color: #dddddd;
@@ -297,7 +332,6 @@ footer {
 }
 
 /* Any normal links inside footer */
-
 .footer-box p a {
     color: white;
     text-decoration: none;
@@ -309,7 +343,6 @@ footer {
 }
 
 /* Responsive */
-
 @media (max-width: 768px) {
 
     .footer-container {
@@ -331,5 +364,5 @@ footer {
     .footer-box h3 a {
         width: 200px;
     }
-
+    
 }

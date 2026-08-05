@@ -1,6 +1,4 @@
-/* ==========================================
-   NAVIGATION BAR START
-========================================== */
+/* NAVIGATION BAR START */
 
 header{
     width:100%;
@@ -8,9 +6,7 @@ header{
     border-bottom:1px solid #ccc;
 }
 
-/* ==========================================
-   HEADER
-========================================== */
+/* HEADER */
 
 header{
     width:100%;
@@ -19,9 +15,7 @@ header{
 }
 
 
-/* ==========================================
-   TOP BAR
-========================================== */
+/* TOP BAR */
 
 .top-bar{
     display:flex;
@@ -97,7 +91,6 @@ nav a:hover{
     background:#f2f2f2;
 }
 
-
 .site-header {
   position: sticky;
   top: 0;
@@ -105,48 +98,54 @@ nav a:hover{
   background-color: #fff;
 }
 
-/* ==========================================
-   NAVIGATION BAR END
-========================================== */
+/* NAVIGATION BAR END */
 
 
-/* ==========================================
-   HERO SECTION
-========================================== */
+/* HERO SECTION */
+
 .homepage {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.homepage .hero {
-    text-align: center;
-    padding: 60px 20px;
+/* PAGE TITLE */
+
+.trending{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.homepage .hero-box {
-    background: #0b2d5c;
-    color: white;
-    max-width: 850px;
-    margin: auto;
-    padding: 50px;
-    border-radius: 20px;
-    border: 3px solid #1f4e8c;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+.page-title{
+    max-width:1400px;
+    margin:20px auto;
+    padding:60px 20px;
+    text-align:center;
+    border-radius:16px;
+    background:linear-gradient(135deg, #1a1a2e 0%, #000080 100%);
 }
 
-.homepage .hero h1 {
-    font-size: 2.7rem;
-    margin-bottom: 20px;
+.page-title h1{
+    margin:0;
+    color:white;
+    letter-spacing:6px;
 }
 
-.homepage .hero p {
-    font-size: 1.15rem;
-    line-height: 1.6;
+.page-title h1::after{
+    content:'';
+    display:block;
+    width:90px;
+    height:5px;
+    background:#FFFDD0;
+    margin:20px auto;
 }
 
+.page-title p{
+    max-width:650px;
+    margin:0 auto;
+    color:white;
+    font-size:18px;
+    line-height:1.6;
+}
 
-/* ==========================================
-   SHOP NOW BUTTON
-========================================== */
+/* SHOP NOW BUTTON */
 
 .homepage .button-container {
     margin-top: 35px;
@@ -170,13 +169,7 @@ nav a:hover{
 }
 
 
-/* ==========================================
-   SECTION HEADINGS
-========================================== */
-
-.homepage section {
-    padding: 50px 20px;
-}
+/* SECTION HEADINGS */
 
 .homepage section h2 {
     text-align: center;
@@ -185,9 +178,7 @@ nav a:hover{
     font-size: 2rem;
 }
 
-/* ==========================================
-   WHY SHOP WITH US
-========================================== */
+/* WHY SHOP WITH US */
 
 .why-us {
     padding: 70px 30px;
@@ -238,9 +229,7 @@ nav a:hover{
     margin: 0;
 }
 
-/* ==========================================
-   RECENT REVIEWS
-========================================== */
+/* RECENT REVIEWS */
 
 .reviews-section {
     padding: 80px 20px;
@@ -301,9 +290,7 @@ nav a:hover{
     letter-spacing: 1px;
 }
 
-/* ==========================================
-   FOOTER
-========================================== */
+/* FOOTER */
 
 .homepage footer {
     background-color: #0b2d5c;
@@ -409,4 +396,3 @@ nav a:hover{
     }
 
 }
-
