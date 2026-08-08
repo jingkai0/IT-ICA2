@@ -1,6 +1,10 @@
 /* Author: Dylan, admin no: 261424B */
+/* Base styles */
 * {
     box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
 }
 
 html,
@@ -11,35 +15,48 @@ body {
     overflow-x: hidden;
 }
 
-header,
-.site-header {
-    width: 100%;
-    background: white;
-    border-bottom: 1px solid #ccc;
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    color: #000;
 }
 
+/* Header */
 .site-header {
+    width: 100%;
     position: sticky;
     top: 0;
     z-index: 9999;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
 }
 
+/* Top bar */
 .top-bar {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     gap: 20px;
     padding: 20px 40px;
 }
 
-.logo {
-    width: 120px;
-    height: 60px;
-    margin: 0;
-    object-fit: contain;
+.top-bar a:first-child {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
 }
 
+.logo {
+    width: 180px;
+    height: 120px;
+    margin: -70px;
+    object-fit: contain;
+    display: block;
+}
+
+/* Search bar */
 .search-bar {
     flex: 1;
     min-width: 0;
@@ -48,22 +65,31 @@ header,
     border: 2px solid #bfbfbf;
     border-radius: 30px;
     font-size: 16px;
+    outline: none;
 }
 
+.search-bar:focus {
+    border-color: #333;
+}
+
+/* Help button */
 .help-button {
     flex-shrink: 0;
     text-decoration: none;
-    color: black;
+    color: #000;
     border: 2px solid #bfbfbf;
     border-radius: 10px;
     padding: 12px 20px;
     font-weight: bold;
+    white-space: nowrap;
+    transition: background-color 0.2s ease;
 }
 
 .help-button:hover {
-    background: #f2f2f2;
+    background-color: #f2f2f2;
 }
 
+/* Nav bar */
 nav {
     width: 100%;
     border-top: 1px solid #ddd;
@@ -89,203 +115,49 @@ nav li:last-child {
 }
 
 nav a {
+    min-height: 60px;
+    padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 60px;
-    padding: 10px;
     text-align: center;
     text-decoration: none;
-    color: black;
+    color: #000;
     font-weight: bold;
+    transition: background-color 0.2s ease;
 }
 
 nav a:hover {
-    background: #f2f2f2;
-}
-
-@media (max-width: 768px) {
-    .top-bar {
-        padding: 15px 20px;
-        gap: 12px;
-    }
-
-    .logo {
-        width: 90px;
-        height: 50px;
-    }
-
-    .search-bar {
-        min-width: 0;
-        height: 42px;
-        padding: 0 14px;
-        font-size: 14px;
-    }
-
-    .help-button {
-        padding: 10px 15px;
-        font-size: 14px;
-    }
-
-    nav a {
-        min-height: 55px;
-        padding: 8px 3px;
-        font-size: 13px;
-        line-height: 1.2;
-    }
-}
-
-@media (max-width: 500px) {
-    .top-bar {
-        padding: 12px 10px;
-        gap: 8px;
-    }
-
-    .logo {
-        width: 75px;
-        height: 45px;
-    }
-
-    .search-bar {
-        height: 40px;
-        padding: 0 12px;
-    }
-
-    .help-button {
-        padding: 9px 12px;
-        font-size: 13px;
-    }
-
-    nav a {
-        font-size: 12px;
-        padding: 7px 2px;
-    }
-}
-
-
-/* Base font */
-* {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-/* Header */
-header{
-    width:100%;
-    background:white;
-    border-bottom:1px solid #ccc;
-}
-
-.site-header {
-  position: sticky;
-  top: 0;
-  z-index: 9999;
-  background-color: #fff;
-}
-
-/* Top bar */
-.top-bar{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:20px;
-    padding:20px 40px;
-}
-
-.logo{
-    width:120px;
-    height:60px;
-    margin: -50px;
-    object-fit: cover;
-}
-
-.search-bar{
-    flex:1;
-    height:45px;
-    padding:0 20px;
-    border:2px solid #bfbfbf;
-    border-radius:30px;
-    font-size:16px;
-}
-
-.help-button{
-    text-decoration:none;
-    color:black;
-    border:2px solid #bfbfbf;
-    border-radius:10px;
-    padding:12px 20px;
-    font-weight:bold;
-}
-
-.help-button:hover{
-    background:#f2f2f2;
-}
-
-/* Nav bar */
-nav{
-    width:100%;
-    border-top:1px solid #ddd;
-    border-bottom:1px solid #ddd;
-}
-
-nav ul{
-    display:flex;
-    list-style:none;
-    margin:0;
-    padding:0;
-}
-
-nav li{
-    flex:1;
-    border-right:1px solid #999;
-}
-
-nav li:last-child{
-    border-right:none;
-}
-
-nav a{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:60px;
-    text-decoration:none;
-    color:black;
-    font-weight:bold;
-}
-
-nav a:hover{
-    background:#f2f2f2;
+    background-color: #f2f2f2;
 }
 
 /* Main layout */
 .main-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 30px 40px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    flex-grow: 1;
-    margin-bottom: 20px;
+    gap: 40px;
+    flex: 1;
 }
 
-@media (max-width: 768px) {
-    .main-container {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* Left Column */
+/* Left column */
 .left-column {
     display: flex;
     flex-direction: column;
-    gap: 1px;
+    gap: 20px;
 }
 
-img {
-    width: 550px;
+/* Main product image */
+.left-column .main-img {
+    width: 100%;
+    max-width: 550px;
     height: 500px;
     object-fit: contain;
     padding: 20px;
-    margin-top: -15px;
-    margin-bottom: -68px;
+    margin: 0 auto;
     display: block;
 }
 
@@ -295,150 +167,157 @@ img {
     font-weight: 700;
     text-align: center;
     text-decoration: underline;
-    margin-top: 60px;
+    margin: 20px 0 10px;
 }
 
 .recommendations-grid {
+    width: 100%;
     display: grid;
-    grid-template-columns: 2fr 2fr;
-    gap: 30px;
-    flex-grow: 1;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
     margin-bottom: 20px;
 }
 
-/* Product section */
+/* Product layout */
 .shoe-card {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    background: #ffffff;
+    align-items: center;
+    gap: 15px;
+    background-color: #fff;
+    border: 1px solid #eaeaea;
     border-radius: 8px;
-    padding: 25px;
+    padding: 20px;
     text-align: center;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-    border: 1px solid #eaeaea;
 }
 
 .shoe-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
 }
 
 /* Product image */
 .shoe-image {
-    width: 220px;
+    width: 100%;
+    max-width: 220px;
     height: 150px;
     object-fit: contain;
     padding: 10px;
+    margin: 0;
 }
 
 /* Product name */
 .shoe-name {
-    padding: 20px;
-    margin-bottom: -20px;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
 }
 
-/* View product btn */
+/* View product button */
 .shoe-btn {
-    color: black;
+    width: 100%;
+    color: #000;
     border: 2px solid #333;
     border-radius: 8px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     background-color: transparent;
-    transition: background 0.2s;
-    padding: 15px;
-    text-decoration:none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    padding: 12px;
+    text-decoration: none;
 }
 
 .shoe-btn:hover {
-    background: #333;
+    background-color: #333;
     color: #fff;
 }
 
-.shoe-btn a {
-    text-decoration: none;
-    color: inherit;
-    display: block;
-}
-
-/* Right Column */
+/* Right column */
 .right-column {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
+    padding-top: 20px;
 }
 
-/* Product info */
+/* Product name */
 .product-name {
-    font-size: 28px;
     padding: 10px;
-    margin-top: -20px;
+    margin: 0;
+    margin-top: 15px;
+}
+
+.product-name h1 {
+    font-size: 28px;
+    margin: 0;
 }
 
 .product-name p {
-    font-size: 20px;
-    margin-top: -35px;
-    margin-bottom: 35px;
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 50px;
 }
 
+.product-name span {
+    font-size: 22px;
+}
+
+/* Product description */
 .product-description {
     padding: 10px;
-    background: #fff;
-    font-size: 21px;
-    margin-top: 20px;
-
+    background-color: #fff;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
 }
 
-.product-description h3 {
+.product-description h2 {
+    font-size: 24px;
     text-decoration: underline;
-    margin-bottom: -20px;
+    margin: 0 0 15px;
 }
 
-.product-size {
-    font-size: 28px;
-    padding-top: -50px ;
-    margin-bottom: -50px;
-    padding-left: 10px;
-    margin-top: -6px;
+.product-description p {
+    margin: 0;
 }
 
 /* Checkout section */
 .btn-checkout {
+    align-self: flex-start;
     border: 2px solid #333;
     border-radius: 8px;
     font-size: 20px;
     font-weight: bold;
     background-color: transparent;
-    transition: background 0.2s;
-    padding: 20px;
-    margin-top: 10px;
-    margin-bottom: 70px;
-    margin-left: 20px;
-    margin-right: 35px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    padding: 15px 220px;
+    margin: 70px 0 30px 20px;
+    text-decoration: none;
+    color: #333;
 }
 
 .btn-checkout:hover {
-    background: #333;
+    background-color: #333;
     color: #fff;
 }
 
 .btn-checkout a {
     text-decoration: none;
     color: inherit;
-    display: block;
 }
 
 /* Footer */
 footer {
+    width: 100%;
     background-color: #0b2d5c;
-    color: white;
+    color: #fff;
     padding: 50px 20px;
-    margin-top: 80px;
-    margin: -8px;
+    margin: 0;
 }
 
 .footer-container {
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -461,14 +340,14 @@ footer {
     text-align: right;
 }
 
-/* Footer Headings */
+/* Footer headings */
 .footer-box h3 {
-    margin-bottom: 20px;
+    margin: 0 0 20px;
     font-size: 1.3rem;
     font-weight: bold;
 }
 
-/* Button Style */
+/* Footer buttons */
 .footer-box h3 a {
     display: inline-block;
     background-color: #ffb703;
@@ -487,21 +366,189 @@ footer {
     transform: translateY(-3px);
 }
 
-/* Footer Text */
+/* Footer text */
 .footer-box p {
     margin: 8px 0;
-    color: #dddddd;
+    color: #ddd;
     line-height: 1.6;
     font-size: 0.95rem;
 }
 
-/* Any normal links inside footer */
 .footer-box p a {
-    color: white;
+    color: #fff;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .footer-box p a:hover {
     color: #ffb703;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+
+    .top-bar {
+        padding: 15px 20px;
+        gap: 12px;
+    }
+
+    .logo {
+        width: 90px;
+        height: 50px;
+    }
+
+    .search-bar {
+        height: 42px;
+        padding: 0 14px;
+        font-size: 14px;
+    }
+
+    .help-button {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    nav a {
+        min-height: 55px;
+        padding: 8px 3px;
+        font-size: 13px;
+        line-height: 1.2;
+    }
+
+    .main-container {
+        grid-template-columns: 1fr;
+        padding: 25px 20px;
+        gap: 30px;
+    }
+
+    .left-column > img {
+        height: 400px;
+    }
+
+    .right-column {
+        padding-top: 0;
+    }
+
+    .product-name h4 {
+        font-size: 24px;
+    }
+
+    .product-description {
+        font-size: 17px;
+    }
+
+    .recommendations-grid {
+        gap: 15px;
+    }
+
+    .shoe-card {
+        padding: 15px;
+    }
+
+    .shoe-name {
+        font-size: 16px;
+    }
+
+    .footer-container {
+        gap: 25px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+
+    .top-bar {
+        padding: 12px 10px;
+        gap: 8px;
+    }
+
+    .logo {
+        width: 70px;
+        height: 45px;
+    }
+
+    .search-bar {
+        height: 40px;
+        padding: 0 12px;
+        font-size: 13px;
+    }
+
+    .help-button {
+        padding: 9px 10px;
+        font-size: 13px;
+    }
+
+    nav a {
+        min-height: 50px;
+        font-size: 11px;
+        padding: 7px 2px;
+    }
+
+    .main-container {
+        padding: 20px 12px;
+        gap: 20px;
+    }
+
+    .left-column > img {
+        width: 100%;
+        height: 300px;
+        padding: 10px;
+    }
+
+    .recommendations-title {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .recommendations-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .shoe-image {
+        max-width: 200px;
+    }
+
+    .product-name h4 {
+        font-size: 22px;
+    }
+
+    .product-name p {
+        font-size: 16px;
+    }
+
+    .product-name span {
+        font-size: 19px;
+    }
+
+    .product-description {
+        font-size: 16px;
+    }
+
+    .product-description h3 {
+        font-size: 21px;
+    }
+
+    .btn-checkout {
+        width: calc(100% - 20px);
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    footer {
+        padding: 35px 15px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-box,
+    .footer-box:nth-child(2),
+    .footer-box:last-child {
+        width: 100%;
+        text-align: center;
+    }
 }
